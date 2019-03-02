@@ -1,0 +1,30 @@
+.contacts__header{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: space-around;
+    color: #3d6cb0;
+}
+.contacts__header-h2{
+    padding-left: 0.7917rem;
+    margin-right: 0.6667rem;
+}
+.contacts__header:after{
+    content: "";
+    display: block;
+    height: 0.1667rem;
+    width: 100%;
+    background-color: #3d6cb0;
+}
+.contacts__main b{
+    color: #3d6cb0;
+}
+.contacts__main{
+    display: flex;
+}
+.contacts__main__title-wrap{
+    width: 8.125rem;
+}
+.contacts__main__text-wrap{
+
+}

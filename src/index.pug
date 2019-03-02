@@ -1,0 +1,26 @@
+doctype html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+meta(charset = 'utf-8')
+html
+style
+//
+    include global-variables.scss
+    include index.scss
+    include intro/intro.scss
+    include profile/profile.scss
+    include contacts/contacts.scss
+    include skills/skills.scss
+head
+    title my lesson
+body
+<div class="main__container">
+.main__container-left
+    include intro/intro.pug
+    include profile/profile.pug
+    include contacts/contacts.pug
+    include skills/skills.pug
+.main__container-right
+    include education/education.pug
+    include experience/experience.pug
+    include software/software.pug
+</div>
