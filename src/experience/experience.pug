@@ -3,13 +3,17 @@ html
 head
 body
 mixin experience
-  //  img(src="../src/images/black-point.jpg" alt="picture")
-  p <b>Company name</b> //Feb 2011 - Jun 2014
-  p Your job here
-  p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+  ul
+   li
+    p.experience__main__subtitle-job <b class="experience__main__subtitle">Company name</b> //Feb 2011 - Jun 2014
+    p.experience__main__subtitle-job Your job here
+    p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
 header
-  //  img(src="../src/images/experience.jpg" alt="picture")
-  h2 Experience
+ .experience__header
+  .experience__header-img
+    img(src="../src/experience/img/EXPERIENCE-ICON.jpg" alt="picture")
+  .experience__header-h2
+    h2 experience
 main
   +experience
   +experience

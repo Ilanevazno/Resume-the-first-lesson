@@ -1,0 +1,30 @@
+$blue: #3d6cb0;
+.education__header{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: space-around;
+    color: $blue;
+}
+.education__header-h2{
+    padding-left: 0.7917rem;
+    margin-right: 0.6667rem;
+}
+.education__header:after{
+    content: "";
+    display: block;
+    height: 0.1667rem;
+    width: 100%;
+    background-color: $blue;
+}
+
+.education__main__subtitle{
+    color: $blue;
+    font-size: 1.25rem;
+    position: relative;
+    font-weight: bold;
+}
+
+.education__main__subtitle-institution{
+    font-size: 1.6667rem;
+}

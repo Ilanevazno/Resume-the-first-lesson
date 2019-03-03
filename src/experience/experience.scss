@@ -1,0 +1,29 @@
+$blue: #3d6cb0;
+.experience__header{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: space-around;
+    color: $blue;
+}
+.experience__header-h2{
+    padding-left: 0.7917rem;
+    margin-right: 0.6667rem;
+}
+.experience__header:after{
+    content: "";
+    display: block;
+    height: 0.1667rem;
+    width: 100%;
+    background-color: $blue;
+}
+
+.experience__main__subtitle{
+    text-transform: uppercase;
+    position: relative;
+    font-weight: bold;
+}
+
+.experience__main__subtitle-job{
+    font-size: 1.6667rem;
+}

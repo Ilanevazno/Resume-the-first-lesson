@@ -3,14 +3,18 @@ html
 head
 body
 mixin education
-  //  img(src="../src/images/black-point.jpg" alt="picture")
-  p <b>MASTER DEGREE</b> // Feb 2011 - Jun 2014 
-  p UNIVERSITY NAME
-  p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque. 
+  ul
+    li 
+      p.education__main__subtitle-institution <b class="education__main__subtitle"> MASTER DEGREE </b> // Feb 2011 - Jun 2014
+      p.education__main__subtitle-institution University name
+      p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
 
 header
-  //  img(src="../src/images/education.jpg" alt="picture")
-  h2 Education
+ .education__header
+  .education__header-img
+    img(src="../src/education/img/EDUCATION-ICON.jpg" alt="picture")
+  .education__header-h2
+    h2 Education
 main
 +education
 +education
