@@ -1,0 +1,8 @@
+@mixin skills__circle{
+    width: 0.9304rem;
+    height: 0.9304rem;
+    border-radius: 50%;
+    background-color: #e6e6e6;
+    display: flex;
+    margin-left: 0.75rem;
+}

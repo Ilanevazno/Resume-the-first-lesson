@@ -1,0 +1,35 @@
+// Миксин для шапки каждого левого блока
+mixin block__header(src, title)
+    .block__header
+        .block__image
+            img(src= src)
+        .block__title
+            h2= title
+        .block__title__line
+// Миксин для шапки каждого левого блока
+mixin block__header-second(src, title)
+    .block__header-second
+        .block__image-second
+            img(src= src)
+        .block__title-second
+            h2= title
+        .block__title__line-second
+// Миксин для блока "software"
+mixin skills(progress, name)
+    p(class= 'software__progress__name '+name)= skills 
+    div(class= 'software__progress__'+progress)= skills
+// Миксин для кружков в блоке 'skills'
+mixin block__skills()
+    ul 
+        li
+        li
+        li
+        li
+        li
+        li
+        li
+        li
+        li
+        li
+        li
+        li

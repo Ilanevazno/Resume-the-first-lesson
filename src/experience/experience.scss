@@ -1,29 +1,43 @@
 $blue: #3d6cb0;
 .experience__header{
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    justify-content: space-around;
-    color: $blue;
+    margin-top: 2rem;
+    margin-bottom: 1.7rem;
 }
-.experience__header-h2{
-    padding-left: 0.7917rem;
-    margin-right: 0.6667rem;
-}
-.experience__header:after{
-    content: "";
-    display: block;
-    height: 0.1667rem;
-    width: 100%;
-    background-color: $blue;
-}
-
 .experience__main__subtitle{
+    font-size: 1.320rem;
     text-transform: uppercase;
     position: relative;
     font-weight: bold;
+    margin-right: 0.80rem;
 }
 
-.experience__main__subtitle-job{
-    font-size: 1.6667rem;
+.experience__main__subtitle__job{
+    font-size: 1.320rem;
+}
+.experience__main__subtitle__job-uppercase{
+    font-size: 1.320rem;
+    text-transform: uppercase;
+    margin-top: 0.2rem;
+    margin-bottom: 0.24rem;
+}
+.experience__main ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 2.7rem;
+    position: relative;
+}
+.experience__main ul:before{
+    content: "";
+    display: block;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: absolute;
+    left: -2.1rem;
+    top: 0.5rem;
+    background-color: black;
+}
+.experience__main__text{
+    margin-bottom: 0.5rem;
 }

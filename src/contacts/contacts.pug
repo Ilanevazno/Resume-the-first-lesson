@@ -3,18 +3,15 @@ html
 head
 body
 .contacts__header
-  .contacts__header-img
-    img(src="../src/images/contacts-pic.jpg" alt="picture")
-  .contacts__header-h2
-    h2 CONTACT
+  +block__header('../src/images/contacts-pic.jpg', 'Contact')
 .contacts__main
   .contacts__main__title-wrap
-    p <b>ADDRESS</b>
-    p <b>E-MAIL</b>
-    p <b>PHONE</b>
-    p <b>WEBSITE</b>
+    p(class="title-wrap") <b>ADDRESS</b>
+    p(class="title-wrap") <b>E-MAIL</b>
+    p(class="title-wrap") <b>PHONE</b>
+    p(class="title-wrap") <b>WEBSITE</b>
   .contacts__main__text-wrap
     p Main Street, City.
-    p E-MAIL contact@domain.com
+    p contact@domain.com
     p 555-555-555
     p www.yourweb.com

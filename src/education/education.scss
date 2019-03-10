@@ -1,30 +1,43 @@
 $blue: #3d6cb0;
-.education__header{
+.education__main{
     display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    justify-content: space-around;
-    color: $blue;
+    flex-direction: column;
 }
-.education__header-h2{
-    padding-left: 0.7917rem;
-    margin-right: 0.6667rem;
-}
-.education__header:after{
-    content: "";
-    display: block;
-    height: 0.1667rem;
-    width: 100%;
-    background-color: $blue;
-}
-
 .education__main__subtitle{
     color: $blue;
-    font-size: 1.25rem;
+    font-size: 1.320rem;
     position: relative;
     font-weight: bold;
+    margin-right: 0.6rem;
 }
 
 .education__main__subtitle-institution{
-    font-size: 1.6667rem;
+    font-size: 1.3210rem;
+}
+.University{
+    font-size: 1.3510rem;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+    margin-top: 0.2rem;
+}
+.education__main ul{
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-left: 2.75rem;
+}
+.education__main ul:before{
+    content: "";
+    display: block;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: absolute;
+    left: -2.1rem;
+    top: 0.5rem;
+    background-color: black;
+}
+.education__main__text{
+    margin-bottom: 0.3rem;
 }

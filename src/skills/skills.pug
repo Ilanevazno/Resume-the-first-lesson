@@ -3,72 +3,21 @@ html
 head
 body
 .skills__header
-  .skills__header-img
-    img(src="../src/images/contacts-pic.jpg" alt="picture")
-  .skills__header-h2
-    h2 SKILLS
+  +block__header('../src/skills/img/SKILLS-ICON.jpg', 'Skills')
 .skills__main
   .skills__main__container
     p Creative
     .skills__main__creative-progress-bar
-      ul 
-        li
-        li
-        li
-        li
-        li
-        li
-        li
-        li
-        li
-        li
-        li
-        li
-  .skills__main__container
+      +block__skills
+    .skills__main__container
     p Teamwork
     .skills__main__Teamwork-progress-bar
-      ul
-        li
-        li
-        li
-        li
-        li
-        li
-        li
-        li
-        li
-        li
-        li
-        li
-  .skills__main__container
+      +block__skills
+    .skills__main__container
     p Innovate
     .skills__main__Innovate-progress-bar
-      ul
-        li
-        li
-        li
-        li
-        li
-        li
-        li
-        li
-        li
-        li
-        li
-        li
-  .skills__main__container
+      +block__skills
+    .skills__main__container
     p Communication
     .skills__main__Communication-progress-bar
-      ul
-        li
-        li
-        li
-        li
-        li
-        li
-        li
-        li
-        li
-        li
-        li
-        li
+      +block__skills

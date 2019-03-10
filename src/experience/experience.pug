@@ -5,16 +5,12 @@ body
 mixin experience
   ul
    li
-    p.experience__main__subtitle-job <b class="experience__main__subtitle">Company name</b> //Feb 2011 - Jun 2014
-    p.experience__main__subtitle-job Your job here
-    p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
-header
- .experience__header
-  .experience__header-img
-    img(src="../src/experience/img/EXPERIENCE-ICON.jpg" alt="picture")
-  .experience__header-h2
-    h2 experience
-main
+    p.experience__main__subtitle__job <b class="experience__main__subtitle">Company name</b>// Feb 2011 - Jun 2014
+    p.experience__main__subtitle__job-uppercase Your job here
+    p.experience__main__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+.experience__header
+  +block__header-second('../src/experience/img/EXPERIENCE-ICON.jpg', 'experience')
+.experience__main
   +experience
   +experience
   +experience

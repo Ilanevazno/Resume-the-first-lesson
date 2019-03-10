@@ -1,52 +1,38 @@
 $blue: #3d6cb0;
 // блок цветов для закраски панели skills
 $colors: #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0;
-
-.skills__header{
+// миксин для кружков 
+@mixin skills__circle{
+    width: 0.9304rem;
+    height: 0.9304rem;
+    border-radius: 50%;
+    background-color: #e6e6e6;
     display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    justify-content: space-around;
-    color: $blue;
-}
-.skills__header-h2{
-    padding-left: 0.7917rem;
-    margin-right: 0.6667rem;
-}
-.skills__header:after{
-    content: "";
-    display: block;
-    height: 0.1667rem;
-    width: 100%;
-    background-color: #3d6cb0;
+    margin-left: 0.50rem;
+
 }
 .skills__main__container{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     text-transform: uppercase;
 }
 .skills__main__container p{
-    font-size: 1.6667rem;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 0.7583rem;
+    font-size: 1.2834rem;
+    margin: 0 auto;
+    margin-top: 0.7rem;
 }
 .skills__main__creative-progress-bar ul{
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-top: 0.44rem;
+    margin-left: 1.82rem;
 }
 
 .skills__main__creative-progress-bar ul li{
-    width: 1.2083rem;
-    height: 1.2083rem;
-    border-radius: 50%;
-    background-color: #e6e6e6;
-    display: flex;
-    margin-left: 0.75rem;
+@include skills__circle;
     @for $i from 1 through 9 {
         &:nth-child(#{$i}){
             background-color: nth($colors, $i);
@@ -59,14 +45,12 @@ $colors: #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0,
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-top: 0.7rem;
+    margin-left: 1.82rem;
+    margin-bottom: 0.4rem;
 }
 .skills__main__Teamwork-progress-bar ul li{
-    width: 1.2083rem;
-    height: 1.2083rem;
-    background-color: #e6e6e6;
-    border-radius: 50%;
-    display: flex;
-    margin-left: 0.75rem;
+    @include skills__circle;
     @for $i from 1 through 11 {
         &:nth-child(#{$i}){
             background-color: nth($colors, $i);
@@ -78,14 +62,11 @@ $colors: #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0,
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-top: 0.4rem;
+    margin-left: 1.82rem;
 }
 .skills__main__Innovate-progress-bar ul li{
-    width: 1.2083rem;
-    height: 1.2083rem;
-    background-color: #e6e6e6;
-    border-radius: 50%;
-    display: flex;
-    margin-left: 0.75rem;
+    @include skills__circle;
     @for $i from 1 through 6 {
         &:nth-child(#{$i}){
             background-color: nth($colors, $i);
@@ -97,14 +78,11 @@ $colors: #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0,
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-top: 0.62rem;
+    margin-left: 1.82rem;
 }
 .skills__main__Communication-progress-bar ul li{
-    width: 1.2083rem;
-    height: 1.2083rem;
-    background-color: #e6e6e6;
-    border-radius: 50%;
-    display: flex;
-    margin-left: 0.75rem;
+    @include skills__circle;
     @for $i from 1 through 11 {
         &:nth-child(#{$i}){
             background-color: nth($colors, $i);

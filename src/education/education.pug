@@ -6,17 +6,12 @@ mixin education
   ul
     li 
       p.education__main__subtitle-institution <b class="education__main__subtitle"> MASTER DEGREE </b> // Feb 2011 - Jun 2014
-      p.education__main__subtitle-institution University name
-      p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
-
-header
- .education__header
-  .education__header-img
-    img(src="../src/education/img/EDUCATION-ICON.jpg" alt="picture")
-  .education__header-h2
-    h2 Education
-main
-+education
-+education
-+education
-+education
+      p.University University name
+      p.education__main__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+.education__header
+  +block__header-second('../src/education/img/EDUCATION-ICON.jpg', 'Education')
+.education__main
+  +education
+  +education
+  +education
+  +education
