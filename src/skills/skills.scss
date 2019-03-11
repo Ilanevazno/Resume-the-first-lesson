@@ -3,8 +3,8 @@ $blue: #3d6cb0;
 $colors: #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0;
 // миксин для кружков 
 @mixin skills__circle{
-    width: 0.9304rem;
-    height: 0.9304rem;
+    width: 0.921rem;
+    height: 0.921rem;
     border-radius: 50%;
     background-color: #e6e6e6;
     display: flex;
@@ -27,7 +27,7 @@ $colors: #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0,
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-top: 0.44rem;
+    margin-top: 0.65rem;
     margin-left: 1.82rem;
 }
 
@@ -45,7 +45,7 @@ $colors: #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0,
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-top: 0.7rem;
+    margin-top: 0.75rem;
     margin-left: 1.82rem;
     margin-bottom: 0.4rem;
 }
@@ -90,3 +90,19 @@ $colors: #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0,
     }
 }
 
+@media screen and (max-width: 1330px){
+    .skills__main__creative-progress-bar ul,
+    .skills__main__Teamwork-progress-bar ul,
+    .skills__main__Innovate-progress-bar ul,
+    .skills__main__Communication-progress-bar ul{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 960px){
+    .skills__main__creative-progress-bar ul,
+    .skills__main__Teamwork-progress-bar ul,
+    .skills__main__Innovate-progress-bar ul,
+    .skills__main__Communication-progress-bar ul{
+        margin-left: 22%;
+    }
+}

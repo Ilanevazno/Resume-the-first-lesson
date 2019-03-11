@@ -6,3 +6,16 @@
     display: flex;
     margin-left: 0.75rem;
 }
+@mixin progress-bar {
+    width: 14.270rem;
+    height: 1.1rem;
+    background-color: $bar;
+    margin-bottom: 0.95rem;
+}
+@mixin progress-bar-process($width){
+    content: "";
+    display: block;
+    height: 100%;
+    width: $width;
+    background-color: $blue;
+}

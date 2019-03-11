@@ -14,7 +14,7 @@ $bar: #e6e6e6;
     background-color: $blue;
 }
 .software__header{
-    margin-top: 2.4rem;
+    margin-top: 2.5rem;
     margin-bottom: 0.9rem;
 }
 .software__main{
@@ -62,4 +62,19 @@ $bar: #e6e6e6;
 }
 .software__progress__html-css3:after{
     @include progress-bar-process(91.2%);
+}
+@media screen and (max-width: 1330px) {
+    .software__progress__photoshop,
+    .software__progress__illustrator,
+    .software__progress__indesign,
+    .software__progress__dreamweaver, 
+    .software__progress__after-effects,
+    .software__progress__html-css3 {
+        width: 10.27rem;
+    }
+}
+@media screen and (max-width: 960px){
+    .software__main__left-column{
+        margin-right: 9.5rem;
+    }
 }

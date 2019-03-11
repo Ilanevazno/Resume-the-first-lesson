@@ -6,17 +6,17 @@ p,
 b{
     margin: 0;
     padding: 0;
-    font-size: 0.7930rem;
+    font-size: 0.8rem;
 }
 h1{
-    font-size: 2.7309rem;
+    font-size: 2.8rem;
     font-weight: lighter;
     line-height: 1.0833rem;
     margin-left: 0.6rem;
 } 
 img{
-    width: 3.8rem;
-    height: 3.8rem;
+    width: 3.7rem;
+    height: 3.7rem;
     margin-top: 0.2rem;
 }
 h2{
@@ -28,7 +28,7 @@ h2{
 body{
     margin: 0;
     padding: 0;
-    padding-left: 3.1rem;
+    padding-left: 3.2rem;
     min-width: 320px;
     max-width: 1920px;
     box-sizing: border-box;
@@ -96,4 +96,17 @@ h3{
     height: 0.2917rem;
     width: 100%;
     background-color: #3d6cb0;
+}
+@media screen and (max-width: 960px){
+    .main__container{
+        flex-direction: column;
+        width: 85rem;
+    }
+    .main__container-left{
+        width: 100%;
+    }
+    .main__container-right{
+        width: 36%;
+        margin-left: 0;
+    }
 }
