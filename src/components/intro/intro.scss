@@ -1,0 +1,60 @@
+*{
+    font-family: Myriad Pro;
+    line-height: auto;
+    box-sizing: border-box;
+}
+.intro {
+    &__main {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        margin-left: 3.4rem;
+        margin-bottom: 3.9rem;
+    }
+
+    &__circle {
+        &-blue {
+            width: 10.39rem;
+            height: 10.39rem;
+            background-color: #3d6cb0;
+            border-radius: 50%;
+            position: relative;
+            margin-bottom: 3.25rem;
+            margin-top: 0.9rem;
+            margin-left: 2.6rem;
+
+            &:after {
+                content: "";
+                width: 11.87rem;
+                height: 11.87rem;
+                border: 1px solid #3d6cb0;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                display: block;
+            }
+        }
+    }
+
+    &__title {
+        margin-left: 0.4rem;
+    }
+
+    &__header {
+        font-weight: bold;
+        font-size: 3.21rem;
+        line-height: 4rem;
+    }
+
+    &__test {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+        margin: 0;
+        padding: 0;
+        margin-left: 1.83rem;
+    }
+}

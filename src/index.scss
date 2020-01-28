@@ -46,21 +46,26 @@ h3{
 .main p{
     font-size: 0.74rem;
 }
-.main__container{
-    display: flex;
-}
-.main__container-left{
-    max-width: 35.7%;
-    margin-top: 4.4rem;
-    box-sizing: border-box;
-}
-.main__container-right{
-    max-width: 54.4%;
-    box-sizing: border-box;
-    margin-left: 3.875rem;
-    padding-top: 3.7rem;
+
+.main {
+    &__container {
+        display: flex;
+    }
     
+    &__left_container {
+        max-width: 35.7%;
+        margin-top: 4.4rem;
+        box-sizing: border-box;
+    }
+
+    &__right_container {
+        max-width: 54.4%;
+        box-sizing: border-box;
+        margin-left: 3.875rem;
+        padding-top: 3.7rem;
+    }
 }
+
 .block__header{
     display: flex;
     align-items: center;
@@ -96,17 +101,4 @@ h3{
     height: 0.2917rem;
     width: 100%;
     background-color: #3d6cb0;
-}
-@media screen and (max-width: 960px){
-    .main__container{
-        flex-direction: column;
-        width: 85rem;
-    }
-    .main__container-left{
-        width: 100%;
-    }
-    .main__container-right{
-        width: 36%;
-        margin-left: 0;
-    }
 }

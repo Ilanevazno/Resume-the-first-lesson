@@ -1,10 +1,15 @@
-import './tools/variables.scss';
-import './tools/mixins.scss';
+// base
+import './modules/base.pug';
+import './modules/base.scss';
+
+//main
 import './index.scss';
-import './intro/intro.scss';
-import './profile/profile.scss';
-import './contacts/contacts.scss'; 
-import './skills/skills.scss';
-import './education/education.scss';
-import './experience/experience.scss';
-import './software/software.scss'
+
+//pages
+import './components/contacts/contacts';
+import './components/education/education';
+import './components/experience/experience';
+import './components/intro/intro';
+import './components/profile/profile';
+import './components/skills/skills';
+import './components/software/software';

@@ -1,7 +1,12 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require('path');
 
 module.exports = {
+  context: path.resolve(__dirname, 'src'),
+  entry: {
+    main: './index.js'
+  },
   module: {
     rules: [{
         test: /\.pug$/,
@@ -10,7 +15,7 @@ module.exports = {
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
         use: [{
-          loader: 'file-loader?name=./src/fonts/fonts.scss'
+          loader: 'file-loader?name=/fonts/fonts.scss'
         }]
       },
       {
@@ -35,14 +40,14 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: [{
-          loader: 'file-loader?name=/src/images/[name].[ext]'
+          loader: 'file-loader?name=/images/[name].[ext]'
         }]
       }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.pug',
+      template: 'index.pug',
     }),
     new MiniCssExtractPlugin({
       filename: "index.css"

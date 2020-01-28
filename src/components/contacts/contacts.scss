@@ -1,0 +1,21 @@
+
+.contacts {
+    &__title_wrap{
+        width: 6.625rem;
+        margin-bottom: 2.4rem;
+
+        b {
+            color: #3d6cb0;
+            font-size: 1.0267rem;
+        }
+    }
+
+    &__main {
+        display: flex;
+
+        p {
+            font-size: 1.05rem;
+            margin-top: 1.45rem; 
+        }
+    }
+}
