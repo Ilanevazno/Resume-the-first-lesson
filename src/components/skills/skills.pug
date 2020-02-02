@@ -1,23 +1,20 @@
-doctype html
-html
-head
-body
-.skills__header
-  +block__header('./src/assets/img/skills-icon.jpg', 'Skills')
-.skills__main
-  .skills__main__container
-    p Creative
-    .skills__main__creative-progress-bar
-      +block__skills
-    .skills__main__container
-    p Teamwork
-    .skills__main__Teamwork-progress-bar
-      +block__skills
-    .skills__main__container
-    p Innovate
-    .skills__main__Innovate-progress-bar
-      +block__skills
-    .skills__main__container
-    p Communication
-    .skills__main__Communication-progress-bar
-      +block__skills
+.skills
+  .skills__header
+    +block__header('./src/assets/img/skills-icon.jpg', 'Skills')
+  .skills__main
+    .skills__container
+      p Creative
+      .skills__creative-progress-bar
+        +block__skills
+      .skills__container
+      p Teamwork
+      .skills__Teamwork-progress-bar
+        +block__skills
+      .skills__container
+      p Innovate
+      .skills__Innovate-progress-bar
+        +block__skills
+      .skills__container
+      p Communication
+      .skills__Communication-progress-bar
+        +block__skills

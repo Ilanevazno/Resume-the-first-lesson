@@ -1,9 +1,9 @@
-*{
-    font-family: Myriad Pro;
-    line-height: auto;
-    box-sizing: border-box;
-}
 .intro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 1rem;
+
     &__main {
         display: flex;
         flex-direction: column;
@@ -14,19 +14,17 @@
 
     &__circle {
         &-blue {
-            width: 10.39rem;
-            height: 10.39rem;
+            width: 13rem;
+            height: 13rem;
             background-color: #3d6cb0;
             border-radius: 50%;
             position: relative;
-            margin-bottom: 3.25rem;
-            margin-top: 0.9rem;
-            margin-left: 2.6rem;
+            margin-top: 1.5rem;
 
             &:after {
                 content: "";
-                width: 11.87rem;
-                height: 11.87rem;
+                width: 15rem;
+                height: 15rem;
                 border: 1px solid #3d6cb0;
                 border-radius: 50%;
                 position: absolute;
@@ -40,21 +38,23 @@
     }
 
     &__title {
-        margin-left: 0.4rem;
+        margin-top: 2.5rem;
+
+        h1 {
+            font-weight: lighter;
+            font-size: 3.5rem;
+        }
     }
 
     &__header {
         font-weight: bold;
-        font-size: 3.21rem;
-        line-height: 4rem;
+        font-size: 4rem;
+        line-height: 2.4rem;
     }
 
-    &__test {
-        font-size: 1.25rem;
-        font-weight: bold;
-        line-height: 1.4rem;
-        margin: 0;
-        padding: 0;
-        margin-left: 1.83rem;
+    &__text {
+        text-align: center;
+        line-height: 5rem;
+        font-size: 1.56rem;
     }
 }

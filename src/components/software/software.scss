@@ -13,14 +13,32 @@ $bar: #e6e6e6;
     width: $width;
     background-color: $blue;
 }
-.software__header{
-    margin-top: 2.5rem;
-    margin-bottom: 0.9rem;
+
+.software {
+    &__header {
+        margin-top: 2.5rem;
+        margin-bottom: 0.9rem;
+    }
+
+    &__main {
+        display: flex;
+        margin-left: 0.36rem;
+    }
+
+    &__column {
+        &-left {
+            display: flex;
+            flex-direction: column;
+            margin-right: 3.56rem;
+        }
+
+        &-right {
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }
-.software__main{
-    display: flex;
-    margin-left: 0.36rem;
-}
+
 .software__main__left-column p,
 .software__main__right-column p{
     font-family: Myriad pro;
@@ -28,15 +46,7 @@ $bar: #e6e6e6;
     font-size: 1.320rem;
     margin-bottom: 0.38rem;
 }
-.software__main__left-column{
-    display: flex;
-    flex-direction: column;
-    margin-right: 3.56rem;
-}
-.software__main__right-column {
-    display: flex;
-    flex-direction: column;
-}
+
 .software__progress__photoshop,
 .software__progress__illustrator,
 .software__progress__indesign,
@@ -62,19 +72,4 @@ $bar: #e6e6e6;
 }
 .software__progress__html-css3:after{
     @include progress-bar-process(91.2%);
-}
-@media screen and (max-width: 1330px) {
-    .software__progress__photoshop,
-    .software__progress__illustrator,
-    .software__progress__indesign,
-    .software__progress__dreamweaver, 
-    .software__progress__after-effects,
-    .software__progress__html-css3 {
-        width: 10.27rem;
-    }
-}
-@media screen and (max-width: 960px){
-    .software__main__left-column{
-        margin-right: 9.5rem;
-    }
 }

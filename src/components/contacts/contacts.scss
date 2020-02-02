@@ -1,12 +1,20 @@
 
 .contacts {
+    margin-top: 3.2rem;
     &__title_wrap{
-        width: 6.625rem;
-        margin-bottom: 2.4rem;
+        width: 31%;
 
-        b {
+        p {
             color: #3d6cb0;
-            font-size: 1.0267rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+    }
+
+    &__text_wrap {
+        p {
+            font-family: 'PT Sans', Arial, sans-serif;
+            font-size: 1.28rem;
         }
     }
 
@@ -14,8 +22,7 @@
         display: flex;
 
         p {
-            font-size: 1.05rem;
-            margin-top: 1.45rem; 
+            margin-top: 2rem;
         }
     }
 }

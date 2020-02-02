@@ -1,43 +1,47 @@
 $blue: #3d6cb0;
-.education__main{
-    display: flex;
-    flex-direction: column;
-}
-.education__main__subtitle{
-    color: $blue;
-    font-size: 1.320rem;
-    position: relative;
-    font-weight: bold;
-    margin-right: 0.6rem;
-}
 
-.education__main__subtitle-institution{
-    font-size: 1.3210rem;
-}
-.University{
-    font-size: 1.3510rem;
-    text-transform: uppercase;
-    margin-bottom: 0.4rem;
-    margin-top: 0.2rem;
-}
-.education__main ul{
-    list-style: none;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    margin-left: 2.75rem;
-}
-.education__main ul:before{
-    content: "";
-    display: block;
-    width: 1em;
-    height: 1em;
-    border-radius: 50%;
-    position: absolute;
-    left: -2.1rem;
-    top: 0.5rem;
-    background-color: black;
-}
-.education__main__text{
-    margin-bottom: 0.3rem;
+.education {
+    &__main {
+        display: flex;
+        flex-direction: column;   
+
+        ul {
+            list-style: none;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            margin-left: 2.75rem;
+
+            li:before {
+                content: "";
+                display: block;
+                width: 1em;
+                height: 1em;
+                border-radius: 50%;
+                position: absolute;
+                left: -2.1rem;
+                top: 0.5rem;
+                background-color: black;
+            }
+        }
+    }
+
+    &__text {
+        margin-bottom: 0.3rem;
+    }
+
+    &__subtitle {
+        color: $blue;
+        font-size: 1.320rem;
+        position: relative;
+        font-weight: bold;
+        margin-right: 0.6rem;
+    }
+
+    &__university {
+        font-size: 1.3510rem;
+        text-transform: uppercase;
+        margin-bottom: 0.4rem;
+        margin-top: 0.2rem;
+    }
 }

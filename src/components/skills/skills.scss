@@ -11,98 +11,119 @@ $colors: #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0,
     margin-left: 0.50rem;
 
 }
-.skills__main__container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-transform: uppercase;
-}
-.skills__main__container p{
-    font-size: 1.2834rem;
-    margin: 0 auto;
-    margin-top: 0.7rem;
-}
-.skills__main__creative-progress-bar ul{
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-top: 0.65rem;
-    margin-left: 1.82rem;
-}
 
-.skills__main__creative-progress-bar ul li{
-@include skills__circle;
-    @for $i from 1 through 9 {
-        &:nth-child(#{$i}){
-            background-color: nth($colors, $i);
-        }
-    }
-}
+.skills {
+    margin-top: 1.2rem;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-transform: uppercase; 
 
-.skills__main__Teamwork-progress-bar ul{
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-top: 0.75rem;
-    margin-left: 1.82rem;
-    margin-bottom: 0.4rem;
-}
-.skills__main__Teamwork-progress-bar ul li{
-    @include skills__circle;
-    @for $i from 1 through 11 {
-        &:nth-child(#{$i}){
-            background-color: nth($colors, $i);
+        p {
+            font-size: 1.2834rem;
+            margin: 0 auto;
+            margin-top: 0.7rem;
         }
     }
-}
-.skills__main__Innovate-progress-bar ul{
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-top: 0.4rem;
-    margin-left: 1.82rem;
-}
-.skills__main__Innovate-progress-bar ul li{
-    @include skills__circle;
-    @for $i from 1 through 6 {
-        &:nth-child(#{$i}){
-            background-color: nth($colors, $i);
+
+    &__creative-progress-bar {
+        ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-top: 0.65rem;
+            margin-left: 1.82rem;
         }
     }
-}
-.skills__main__Communication-progress-bar ul{
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-top: 0.62rem;
-    margin-left: 1.82rem;
-}
-.skills__main__Communication-progress-bar ul li{
-    @include skills__circle;
-    @for $i from 1 through 11 {
-        &:nth-child(#{$i}){
-            background-color: nth($colors, $i);
+
+    &__Teamwork-progress-bar {
+        ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-top: 0.75rem;
+            margin-left: 1.82rem;
+            margin-bottom: 0.4rem;
+        }
+    }
+
+    &__Innovate-progress-bar {
+        ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-top: 0.4rem;
+            margin-left: 1.82rem;
+        }
+    }
+
+    &__Communication-progress-bar {
+        ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-top: 0.62rem;
+            margin-left: 1.82rem;   
         }
     }
 }
 
-@media screen and (max-width: 1330px){
-    .skills__main__creative-progress-bar ul,
-    .skills__main__Teamwork-progress-bar ul,
-    .skills__main__Innovate-progress-bar ul,
-    .skills__main__Communication-progress-bar ul{
-        margin-left: 0;
-    }
-}
-@media screen and (max-width: 960px){
-    .skills__main__creative-progress-bar ul,
-    .skills__main__Teamwork-progress-bar ul,
-    .skills__main__Innovate-progress-bar ul,
-    .skills__main__Communication-progress-bar ul{
-        margin-left: 22%;
-    }
-}
+
+// .skills__main__Teamwork-progress-bar ul li{
+//     @include skills__circle;
+//     @for $i from 1 through 11 {
+//         &:nth-child(#{$i}){
+//             background-color: nth($colors, $i);
+//         }
+//     }
+// }
+
+// .skills__main__Innovate-progress-bar ul li{
+//     @include skills__circle;
+//     @for $i from 1 through 6 {
+//         &:nth-child(#{$i}){
+//             background-color: nth($colors, $i);
+//         }
+//     }
+// }
+
+// .skills__main__Communication-progress-bar ul li{
+//     @include skills__circle;
+//     @for $i from 1 through 11 {
+//         &:nth-child(#{$i}){
+//             background-color: nth($colors, $i);
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 1330px){
+//     .skills__main__creative-progress-bar ul,
+//     .skills__main__Teamwork-progress-bar ul,
+//     .skills__main__Innovate-progress-bar ul,
+//     .skills__main__Communication-progress-bar ul{
+//         margin-left: 0;
+//     }
+// }
+// @media screen and (max-width: 960px){
+//     .skills__main__creative-progress-bar ul,
+//     .skills__main__Teamwork-progress-bar ul,
+//     .skills__main__Innovate-progress-bar ul,
+//     .skills__main__Communication-progress-bar ul{
+//         margin-left: 22%;
+//     }
+// }
+
+
+// .skills__creative-progress-bar ul li{
+//     @include skills__circle;
+//         @for $i from 1 through 9 {
+//             &:nth-child(#{$i}){
+//                 background-color: nth($colors, $i);
+//             }
+//         }
+//     }

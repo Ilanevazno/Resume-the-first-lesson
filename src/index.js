@@ -1,6 +1,7 @@
 // base
 import './modules/base.pug';
 import './modules/base.scss';
+import './assets/fonts/fonts.scss';
 
 //main
 import './index.scss';

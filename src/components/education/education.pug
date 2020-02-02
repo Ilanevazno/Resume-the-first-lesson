@@ -1,17 +1,17 @@
-doctype html
-html
-head
-body
 mixin education
-  ul
-    li 
-      p.education__main__subtitle-institution <b class="education__main__subtitle"> MASTER DEGREE </b> // Feb 2011 - Jun 2014
-      p.University University name
-      p.education__main__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
-.education__header
-  +block__header-second('./src/assets/img/education-icon.jpg', 'Education')
-.education__main
-  +education
-  +education
-  +education
-  +education
+  p.education__subtitle <b class="education__subtitle-bold"> MASTER DEGREE </b> // Feb 2011 - Jun 2014
+  p.education__university University name
+  p.education__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+.education
+  .education__header
+    +block__header-second('./src/assets/img/education-icon.jpg', 'Education')
+  .education__main
+    ul
+      li
+        +education
+      li
+        +education
+      li
+        +education
+      li
+        +education
