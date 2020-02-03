@@ -1,7 +1,7 @@
 // Миксин для шапки каждого левого блока
-mixin block__header(src, title)
+mixin block__header({src, title, modif})
     .block__header
-        .block__header_image
+        div(class="block__header_image block__header_image--"+ modif)
             img(src= src)
         .block__header_title
             h2= title
@@ -15,9 +15,10 @@ mixin block__header-second(src, title)
             h2= title
         .block__title__line-second
 // Миксин для блока "software"
-mixin skills(progress, name)
-    p(class= 'software__progress__name '+name)= skills 
-    div(class= 'software__progress__'+progress)= skills
+mixin skills(progress)
+    .progress_item
+        p(class= 'software__progress__name'+progress)= progress 
+        div(class= 'software__progress__'+progress)
 // Миксин для кружков в блоке 'skills'
 mixin block__skills()
     ul 

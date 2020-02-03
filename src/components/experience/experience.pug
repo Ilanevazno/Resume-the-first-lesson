@@ -1,16 +1,21 @@
-doctype html
-html
-head
-body
-mixin experience
-  ul
+mixin experience(title, date, job, description)
    li
-    p.experience__main__subtitle__job <b class="experience__main__subtitle">Company name</b>// Feb 2011 - Jun 2014
-    p.experience__main__subtitle__job-uppercase Your job here
-    p.experience__main__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
-.experience__header
-  +block__header-second('./src/assets/img/experience-icon.jpg', 'experience')
-.experience__main
-  +experience
-  +experience
-  +experience
+    .experience__subtitle_wrap
+      p.experience__subtitle= title
+      p.experience__date= date
+    p.experience__job= job
+    p.experience__text= description
+.experience
+  .experience__header
+    +block__header({src: './src/assets/img/experience-icon.jpg', title: 'experience', modif: 'right_side'})
+  .experience__main
+    -
+      var exampleText = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'
+      var experienceList = [
+        {title: 'Company name', date: '// Feb 2011 - Jun 2014', job: 'Your job here', text: exampleText},
+        {title: 'Company name', date: '// Feb 2011 - Jun 2014', job: 'Your job here', text: exampleText},
+        {title: 'Company name', date: '// Feb 2011 - Jun 2014', job: 'Your job here', text: exampleText}
+      ]
+    for item in experienceList
+        ul
+          +experience(item.title, item.date, item.job, item.text)

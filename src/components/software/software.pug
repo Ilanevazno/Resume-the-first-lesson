@@ -1,18 +1,12 @@
 .software
    .software__header
-      +block__header-second('./src/assets/img/software-icon.jpg', 'Software')
+      +block__header({src: './src/assets/img/software-icon.jpg', title: 'Software', modif: 'right_side'})
    .software__main
-      .software__column-left
-         p Photoshop
+      .software__column_left
          +skills('photoshop')
-         p illustrator
          +skills('illustrator')
-         p Indesign
          +skills('indesign')
-      .software__column-right
-         p Dreamweaver
+      .software__column_right
          +skills('dreamweaver')
-         p After Effects
          +skills('after-effects')
-         p html&css3
          +skills('html-css3')

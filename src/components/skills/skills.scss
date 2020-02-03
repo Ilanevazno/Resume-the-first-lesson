@@ -3,127 +3,88 @@ $blue: #3d6cb0;
 $colors: #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0;
 // миксин для кружков 
 @mixin skills__circle{
-    width: 0.921rem;
-    height: 0.921rem;
+    width: 1.1rem;
+    height: 1.1rem;
     border-radius: 50%;
     background-color: #e6e6e6;
     display: flex;
-    margin-left: 0.50rem;
-
 }
 
 .skills {
     margin-top: 1.2rem;
-    &__container {
+    &__main {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-transform: uppercase; 
 
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            margin: 0;
+            padding-left: 11%;
+            padding-right: 12%;
+            margin-top: 0.65rem;
+        }
+
         p {
-            font-size: 1.2834rem;
+            font-family: 'PT Sans', Arial, sans-serif;
             margin: 0 auto;
-            margin-top: 0.7rem;
+            margin-top: 1.7rem;
+            font-size: 1.4rem;
         }
     }
 
     &__creative-progress-bar {
         ul {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            margin-top: 0.65rem;
-            margin-left: 1.82rem;
+            li {
+                @include skills__circle;
+                @for $i from 1 through 9 {
+                    &:nth-child(#{$i}){
+                        background-color: nth($colors, $i);
+                    }
+                }
+            }
         }
     }
 
     &__Teamwork-progress-bar {
         ul {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            margin-top: 0.75rem;
-            margin-left: 1.82rem;
-            margin-bottom: 0.4rem;
+            li {
+                @include skills__circle;
+                @for $i from 1 through 11 {
+                    &:nth-child(#{$i}){
+                        background-color: nth($colors, $i);
+                    }
+                }
+            }
         }
     }
 
     &__Innovate-progress-bar {
         ul {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            margin-top: 0.4rem;
-            margin-left: 1.82rem;
+            li {
+                @include skills__circle;
+                @for $i from 1 through 6 {
+                    &:nth-child(#{$i}){
+                        background-color: nth($colors, $i);
+                    }
+                }
+            }
         }
     }
 
     &__Communication-progress-bar {
         ul {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            margin-top: 0.62rem;
-            margin-left: 1.82rem;   
+            li {
+                @include skills__circle;
+                @for $i from 1 through 11 {
+                    &:nth-child(#{$i}){
+                        background-color: nth($colors, $i);
+                    }
+                }
+            }
         }
     }
 }
-
-
-// .skills__main__Teamwork-progress-bar ul li{
-//     @include skills__circle;
-//     @for $i from 1 through 11 {
-//         &:nth-child(#{$i}){
-//             background-color: nth($colors, $i);
-//         }
-//     }
-// }
-
-// .skills__main__Innovate-progress-bar ul li{
-//     @include skills__circle;
-//     @for $i from 1 through 6 {
-//         &:nth-child(#{$i}){
-//             background-color: nth($colors, $i);
-//         }
-//     }
-// }
-
-// .skills__main__Communication-progress-bar ul li{
-//     @include skills__circle;
-//     @for $i from 1 through 11 {
-//         &:nth-child(#{$i}){
-//             background-color: nth($colors, $i);
-//         }
-//     }
-// }
-
-// @media screen and (max-width: 1330px){
-//     .skills__main__creative-progress-bar ul,
-//     .skills__main__Teamwork-progress-bar ul,
-//     .skills__main__Innovate-progress-bar ul,
-//     .skills__main__Communication-progress-bar ul{
-//         margin-left: 0;
-//     }
-// }
-// @media screen and (max-width: 960px){
-//     .skills__main__creative-progress-bar ul,
-//     .skills__main__Teamwork-progress-bar ul,
-//     .skills__main__Innovate-progress-bar ul,
-//     .skills__main__Communication-progress-bar ul{
-//         margin-left: 22%;
-//     }
-// }
-
-
-// .skills__creative-progress-bar ul li{
-//     @include skills__circle;
-//         @for $i from 1 through 9 {
-//             &:nth-child(#{$i}){
-//                 background-color: nth($colors, $i);
-//             }
-//         }
-//     }

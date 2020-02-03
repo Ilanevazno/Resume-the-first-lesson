@@ -4,44 +4,66 @@ $blue: #3d6cb0;
     &__main {
         display: flex;
         flex-direction: column;   
+        margin-top: 1rem;
 
         ul {
             list-style: none;
-            position: relative;
             margin: 0;
             padding: 0;
             margin-left: 2.75rem;
 
+            li {
+                position: relative;
+                margin-top: 0.65rem;
+            }
+
             li:before {
                 content: "";
                 display: block;
-                width: 1em;
-                height: 1em;
+                width: 1.3rem;
+                height: 1.3rem;
                 border-radius: 50%;
                 position: absolute;
-                left: -2.1rem;
-                top: 0.5rem;
+                left: -5%;
+                top: 6%;
                 background-color: black;
             }
         }
     }
 
     &__text {
-        margin-bottom: 0.3rem;
+        margin: 0.6rem 0 0 0.9rem;
+        font-family: 'PT Sans', Arial, sans-serif;
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+    }
+
+    &__subtitle_wrap {
+        display: flex;
     }
 
     &__subtitle {
         color: $blue;
-        font-size: 1.320rem;
+        font-size: 1.65rem;
         position: relative;
         font-weight: bold;
-        margin-right: 0.6rem;
+        margin: 0;
+        padding-left: 2%;
+    }
+
+    &__date {
+        font-family: 'PT Sans', Arial, sans-serif;
+        font-size: 1.52rem;
+        margin: 0;
+        display: flex;
+        padding-left: 3%;
+        align-items: center;
     }
 
     &__university {
-        font-size: 1.3510rem;
+        font-size: 1.4rem;
         text-transform: uppercase;
-        margin-bottom: 0.4rem;
-        margin-top: 0.2rem;
+        margin: 0.4rem 0 0 0.7rem;
+        font-family: 'PT Sans', Arial, sans-serif;
     }
 }

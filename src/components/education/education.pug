@@ -1,17 +1,22 @@
-mixin education
-  p.education__subtitle <b class="education__subtitle-bold"> MASTER DEGREE </b> // Feb 2011 - Jun 2014
-  p.education__university University name
-  p.education__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+mixin education(title, date, university, description)
+  .education__subtitle_wrap
+    p.education__subtitle= title
+    p.education__date= date
+  p.education__university= university
+  p.education__text= description
 .education
   .education__header
-    +block__header-second('./src/assets/img/education-icon.jpg', 'Education')
+    +block__header({src: './src/assets/img/education-icon.jpg', title: 'Education', modif: 'right_side'})
   .education__main
+    -
+      var exampleDescription = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'
+      var educationList = [
+      {title: 'MASTER DEGREE', date: '// Feb 2011 - Jun 2014', university: 'University name', description: exampleDescription},
+      {title: 'MASTER DEGREE', date: '// Feb 2011 - Jun 2014', university: 'University name', description: exampleDescription},
+      {title: 'MASTER DEGREE', date: '// Feb 2011 - Jun 2014', university: 'University name', description: exampleDescription},
+      {title: 'MASTER DEGREE', date: '// Feb 2011 - Jun 2014', university: 'University name', description: exampleDescription}
+      ]
     ul
-      li
-        +education
-      li
-        +education
-      li
-        +education
-      li
-        +education
+      each item in educationList
+        li
+          +education(item.title, item.date, item.university, item.description)
