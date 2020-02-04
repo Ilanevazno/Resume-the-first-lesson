@@ -1,4 +1,4 @@
-# NSlider
+# Resume layout
 Homework for fullstack development. Here we make html layout for resume. 
 ## Used technologies
 - [x] Pixel perfect
