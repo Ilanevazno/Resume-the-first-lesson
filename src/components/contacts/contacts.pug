@@ -3,13 +3,15 @@ block contacts
     .contacts__header
       +block__header({src: './src/assets/img/contacts-icon.jpg', title: 'Contact'})
     .contacts__main
-      .contacts__title_wrap
-        p.title-wrap ADDRESS
-        p.title-wrap E-MAIL
-        p.title-wrap PHONE
-        p.title-wrap WEBSITE
-      .contacts__text_wrap
-        p.contacts__text Main Street, City.
-        p.contacts__text contact@domain.com
-        p.contacts__text 555-555-555
-        p.contacts__text www.yourweb.com
+      .contacts__row
+        .contacts__caption address
+        p.contacts__data Main Street, City.
+      .contacts__row
+        .contacts__caption e-mail
+        a(href="mailto:contact@domain.com").contacts__data contact@domain.com
+      .contacts__row
+        .contacts__caption phone
+        a(href="tel:555-555-555").contacts__data 555-555-555
+      .contacts__row
+        .contacts__caption website
+        a(href="http://mywebsite.com").contacts__data www.yourweb.com

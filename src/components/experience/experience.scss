@@ -27,8 +27,8 @@ $blue: #3d6cb0;
                 height: 1.3rem;
                 border-radius: 50%;
                 position: absolute;
-                left: -5%;
-                top: 6%;
+                left: -45px;
+                top: 11px;
                 background-color: black;
             }
         }
@@ -53,6 +53,7 @@ $blue: #3d6cb0;
         margin: 0;
         padding-left: 2%;
         text-transform: uppercase;
+        white-space: nowrap;
     }
 
     &__date {
@@ -62,6 +63,7 @@ $blue: #3d6cb0;
         display: flex;
         padding-left: 3%;
         align-items: center;
+        white-space: nowrap;
     }
 
     &__job {

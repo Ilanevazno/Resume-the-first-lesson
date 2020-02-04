@@ -1,28 +1,38 @@
 
 .contacts {
-    margin-top: 3.2rem;
-    &__title_wrap{
-        width: 31%;
-
-        p {
-            color: #3d6cb0;
-            font-size: 1.3rem;
-            font-weight: bold;
-        }
+    &__caption {
+        color: #3d6cb0;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 8.2rem;
     }
 
-    &__text_wrap {
-        p {
-            font-family: 'PT Sans', Arial, sans-serif;
-            font-size: 1.28rem;
-        }
+    &__data {
+        font-family: 'PT Sans', Arial, sans-serif;
+        font-size: 1.28rem;
+    }
+    margin-top: 3.2rem;
+
+    &__row {
+        display: flex;
+        margin-top: 1.88rem;
     }
 
     &__main {
         display: flex;
+        flex-direction: column;
 
         p {
-            margin-top: 2rem;
+            margin: 0;  
+            display: flex;
+            align-items: center;
         }
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        word-break: break-word;
     }
 }
