@@ -1,8 +1,7 @@
 // base
-import './modules/base.pug';
-import './modules/base.scss';
+import './modules/mixins.scss';
 import './assets/fonts/fonts.scss';
-import './modules/normalize.scss';
+import './assets/favicons/favicons.js'
 
 //pages
 import './components/contacts/contacts';
@@ -14,5 +13,7 @@ import './components/skills/skills';
 import './components/software/software';
 
 // //main
-import './index.scss';
-import './modules/media.scss';
+import './styles/index.scss';
+
+//media
+import './styles/media.scss';

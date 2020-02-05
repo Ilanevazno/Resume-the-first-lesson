@@ -21,7 +21,7 @@ $blue: #3d6cb0;
             }
 
             li:before {
-                content: "";
+                content: '';
                 display: block;
                 width: 1.3rem;
                 height: 1.3rem;
@@ -41,7 +41,7 @@ $blue: #3d6cb0;
         line-height: 1.2rem;
     }
 
-    &__subtitle_wrap {
+    &__subtitle-wrap {
         display: flex;
     }
 

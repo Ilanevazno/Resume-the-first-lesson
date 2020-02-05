@@ -1,17 +1,14 @@
-# Resume layout
-Homework for fullstack development. Here we make html layout for resume. 
-## Used technologies
-- [x] Pixel perfect
-- [x] Webpack
+# Webpack
+For easist development i will make my favorite webpack assembly. 
+## Worked
 - [x] PUG
-- [x] SCSS
-- [x] BEM methodology
-- [x] Webpack
+- [x] SCSS/SASS
+- [x] File loader (img, fonts and another...)
 
 ## NPM scripts
 
 #### To start locally 
-- ```npm run dev``` for development environment in watch mode
+- ```npm run watch``` for development environment in watch mode
 
 #### To build project 
 - ```npm run build``` will create build folder in the project folder

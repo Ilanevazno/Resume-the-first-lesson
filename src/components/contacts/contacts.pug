@@ -1,7 +1,7 @@
 block contacts
   .contacts
     .contacts__header
-      +block__header({src: './src/assets/img/contacts-icon.jpg', title: 'Contact'})
+      +block__header({src: './assets/images/contacts-icon.jpg', title: 'Contact'})
     .contacts__main
       .contacts__row
         .contacts__caption address
@@ -14,4 +14,4 @@ block contacts
         a(href="tel:555-555-555").contacts__data 555-555-555
       .contacts__row
         .contacts__caption website
-        a(href="http://mywebsite.com").contacts__data www.yourweb.com
+        a(href="http://mywebsite.com" target="_blank" rel="noopener noreferrer").contacts__data www.yourweb.com

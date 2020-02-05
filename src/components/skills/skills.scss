@@ -1,17 +1,9 @@
-$blue: #3d6cb0;
-// блок цветов для закраски панели skills
-$colors: #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0, #3d6cb0;
-// миксин для кружков 
-@mixin skills__circle{
-    width: 1.1rem;
-    height: 1.1rem;
-    border-radius: 50%;
-    background-color: #e6e6e6;
-    display: flex;
-}
+@import '../../modules/mixins.scss';
+@import '../../modules/variables.scss';
 
 .skills {
     margin-top: 71px;
+    
     &__main {
         display: flex;
         flex-direction: column;

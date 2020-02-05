@@ -1,13 +1,13 @@
 mixin experience(title, date, job, description)
    li
-    .experience__subtitle_wrap
+    .experience__subtitle-wrap
       p.experience__subtitle= title
       p.experience__date= date
     p.experience__job= job
     p.experience__text= description
 .experience
   .experience__header
-    +block__header({src: './src/assets/img/experience-icon.jpg', title: 'experience', modif: 'right_side'})
+    +block__header({src: './assets/images/experience-icon.jpg', title: 'experience', modif: 'right_side'})
   .experience__main
     -
       var exampleText = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'

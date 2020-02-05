@@ -1,22 +1,50 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
-
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
-  context: path.resolve(__dirname, 'src'),
-  entry: {
-    main: './index.js'
+  output: {
+    filename: 'bundle.js'
   },
   module: {
-    rules: [{
-        test: /\.pug$/,
-        use: ['pug-loader']
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader"
+        }
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
         use: [{
-          loader: 'file-loader?name=src/assets/fonts/[name].[ext]'
-        }]
+          loader: 'file-loader',
+          options: {
+            name: './assets/fonts/[name].[ext]',
+            esModule: false,
+          }
+        },]
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: './assets/images',
+              publicPath: './assets/images',
+              useRelativePath: true,
+              esModule: false,
+            }
+          },
+        ],
+      },
+      {
+        test: /\.pug$/,
+        use: [
+          "html-loader",
+          "pug-html-loader"
+        ]
       },
       {
         test: /\.(s(a|c)|c)ss$/,
@@ -37,20 +65,16 @@ module.exports = {
           }
         ]
       },
-      {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: [{
-          loader: 'file-loader?name=/images/[name].[ext]'
-        }]
-      }
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: 'index.pug',
+    new HtmlWebPackPlugin({
+      template: "./src/index.pug",
+      filename: "./index.html"
     }),
     new MiniCssExtractPlugin({
-      filename: "index.css"
+      filename: "[name].css",
+      chunkFilename: "[id].css"
     })
   ]
-}
+};

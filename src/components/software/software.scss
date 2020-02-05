@@ -1,26 +1,13 @@
-$blue: #3d6cb0;
-$bar: #e6e6e6;
-@mixin progress-bar {
-    width: 22.5vw;
-    height: 1.4rem;
-    background-color: $bar;
-    margin-bottom: 0.95rem;
+@import '../../modules/mixins.scss';
+@import '../../modules/variables.scss';
 
-    @media screen and (max-width: 1280px) {
-        width: 20.5vw;
-    }
-
-    @media screen and (max-width: 960px) {
-        width: 40vw;
-    }
-}
-
-@mixin progress-bar-process($width){
-    content: "";
-    display: block;
-    height: 100%;
-    width: $width;
-    background-color: $blue;
+.software__progress_photoshop,
+.software__progress_illustrator,
+.software__progress_indesign,
+.software__progress_dreamweaver,
+.software__progress_after-effects,
+.software__progress_html-css3{
+    @include progress-bar;
 }
 
 .software {
@@ -43,49 +30,40 @@ $bar: #e6e6e6;
     }
 
     &__column {
-        &_left {
+        &-left {
             display: flex;
             flex-direction: column;
         }
 
-        &_right {
+        &-right {
             display: flex;
             flex-direction: column;
         }
     }
-}
 
-.software__main__left-column p,
-.software__main__right-column p{
-    font-family: Myriad pro;
-    text-transform: uppercase;
-    font-size: 1.320rem;
-    margin-bottom: 0.38rem;
-}
+    &__progress {
+        &_photoshop:after {
+            @include progress-bar-process(91%);
+        }
 
-.software__progress__photoshop,
-.software__progress__illustrator,
-.software__progress__indesign,
-.software__progress__dreamweaver,
-.software__progress__after-effects,
-.software__progress__html-css3{
-    @include progress-bar;
-}
-.software__progress__photoshop:after{
-    @include progress-bar-process(91%);
-}
-.software__progress__illustrator:after{
-    @include progress-bar-process(70.6%);
-}
-.software__progress__indesign:after{
-    @include progress-bar-process(56.4%);
-}
-.software__progress__dreamweaver:after{
-    @include progress-bar-process(83%);
-}
-.software__progress__after-effects:after{
-    @include progress-bar-process(61.7%);
-}
-.software__progress__html-css3:after{
-    @include progress-bar-process(91.2%);
+        &_illustrator:after {
+            @include progress-bar-process(70.6%);
+        }
+
+        &_indesign:after {
+            @include progress-bar-process(56.4%);
+        }
+
+        &_dreamweaver:after {
+            @include progress-bar-process(83%);
+        }
+
+        &_after-effects:after {
+            @include progress-bar-process(61.7%);
+        }
+
+        &_html-css3:after {
+            @include progress-bar-process(91.2%);
+        }
+    }
 }
