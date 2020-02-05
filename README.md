@@ -11,7 +11,7 @@ Homework for fullstack development. Here we make html layout for resume.
 ## NPM scripts
 
 #### To start locally 
-- ```npm run dev``` for development environment in watch mode
+- ```npm run watch``` for development environment in watch mode
 
 #### To build project 
 - ```npm run build``` will create build folder in the project folder
