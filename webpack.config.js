@@ -54,7 +54,7 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              importLoaders: 2,
+              importLoaders: 3,
               sourceMap: true
             }
           },
@@ -62,6 +62,12 @@ module.exports = {
             loader: 'sass-loader',
             options: {
               sourceMap: true
+            }
+          },
+          {
+            loader: 'sass-resources-loader',
+            options: {
+              resources: ['./src/modules/mixins.scss', './src/modules/variables.scss']
             }
           }
         ]

@@ -1,5 +1,4 @@
 // base
-import './modules/mixins.scss';
 import './assets/fonts/fonts.scss';
 import './assets/favicons/favicons.js'
 
