@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-meta(charset = 'utf-8' name='viewport' content='initial-scale=1.0, width=device-width')
-meta(name='desctiption' content='Вёрстка сайта "Резюме" для Fullstack development')
-link(rel='apple-touch-icon' sizes='180x180' href='./assets/favicons/apple-touch-icon.png')
-link(rel='icon' type='image/png' sizes='32x32' href='./assets/favicons/favicon-32x32.png')
-link(rel='icon' sizes='any' mask href='./assets/favicons/safari-pinned-tab.svg')
+meta(charset = "utf-8" name="viewport" content="initial-scale=1.0, width=device-width")
+meta(name="desctiption" content="Вёрстка сайта 'Резюме' для Fullstack development")
+link(rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png")
+link(rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png")
+link(rel="icon" sizes="any" mask href="./assets/favicons/safari-pinned-tab.svg")
 html
 head
     block title
@@ -11,7 +11,7 @@ head
 body
     block content
         -
-            const data = require('../../assets/data.json')
+            const data = require('../../assets/data/data.json')
             const { intro, profile, contacts, skills, education, experience, software } = data
         include ../../components/intro/intro.pug
         include ../../components/profile/profile.pug
