@@ -13,7 +13,8 @@ You can enter to [Demo page](https://ilanevazno.github.io/Resume-the-first-lesso
 
 ## NPM scripts
 
-#### Git clone
+## git
+clone this repository with:
 - ```https://github.com/Ilanevazno/Resume-the-first-lesson.git```
 
 #### To start locally 
