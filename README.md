@@ -13,7 +13,7 @@ You can enter to [Demo page](https://ilanevazno.github.io/Resume-the-first-lesso
 
 ## Git
 clone this repository with:
-- ```git clone https://github.com/Ilanevazno/Resume-the-first-lesson.git```
+```git clone https://github.com/Ilanevazno/Resume-the-first-lesson.git```
 
 ## NPM scripts
 
@@ -21,14 +21,14 @@ clone this repository with:
 ```npm install``` installing dependencies before running
 
 #### To start locally 
-- ```npm run watch``` for development environment in watch mode
+```npm run watch``` for development environment in watch mode
 
 #### To build project 
-- ```npm run build``` build project in development mode
+```npm run build``` build project in development mode
 
 #### To build project 
-- ```npm run build``` build project in production mode
+```npm run build``` build project in production mode
 
 #### To deploy
-- ```npm run deploy``` building and deploying project to github pages
+```npm run deploy``` building and deploying project to github pages
 
