@@ -24,55 +24,55 @@
         }
     }
 
-    &__creative-progress-bar {
-        ul {
-            li {
-                @include skills__circle;
-                @for $i from 1 through 9 {
-                    &:nth-child(#{$i}){
-                        background-color: $blue;
-                    }
-                }
-            }
-        }
-    }
+    // &__creative-progress-bar {
+    //     ul {
+    //         li {
+    //             @include skills__circle;
+    //             @for $i from 1 through 9 {
+    //                 &:nth-child(#{$i}){
+    //                     background-color: $blue;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 
-    &__Teamwork-progress-bar {
-        ul {
-            li {
-                @include skills__circle;
-                @for $i from 1 through 11 {
-                    &:nth-child(#{$i}){
-                        background-color: $blue;
-                    }
-                }
-            }
-        }
-    }
+    // &__Teamwork-progress-bar {
+    //     ul {
+    //         li {
+    //             @include skills__circle;
+    //             @for $i from 1 through 11 {
+    //                 &:nth-child(#{$i}){
+    //                     background-color: $blue;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 
-    &__Innovate-progress-bar {
-        ul {
-            li {
-                @include skills__circle;
-                @for $i from 1 through 6 {
-                    &:nth-child(#{$i}){
-                        background-color: $blue;
-                    }
-                }
-            }
-        }
-    }
+    // &__Innovate-progress-bar {
+    //     ul {
+    //         li {
+    //             @include skills__circle;
+    //             @for $i from 1 through 6 {
+    //                 &:nth-child(#{$i}){
+    //                     background-color: $blue;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 
-    &__Communication-progress-bar {
-        ul {
-            li {
-                @include skills__circle;
-                @for $i from 1 through 11 {
-                    &:nth-child(#{$i}){
-                        background-color: $blue;
-                    }
-                }
-            }
-        }
-    }
+    // &__Communication-progress-bar {
+    //     ul {
+    //         li {
+    //             @include skills__circle;
+    //             @for $i from 1 through 11 {
+    //                 &:nth-child(#{$i}){
+    //                     background-color: $blue;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 }

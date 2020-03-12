@@ -1,13 +1,10 @@
-@import '../../modules/mixins.scss';
-@import '../../modules/variables.scss';
-
 .software__progress_photoshop,
 .software__progress_illustrator,
 .software__progress_indesign,
 .software__progress_dreamweaver,
 .software__progress_after-effects,
 .software__progress_html-css3{
-    @include progress-bar;
+    // @include progress-bar;
 }
 
 .software {
@@ -43,27 +40,27 @@
 
     &__progress {
         &_photoshop:after {
-            @include progress-bar-process(91%);
+            // @include progress-bar-process(91%);
         }
 
         &_illustrator:after {
-            @include progress-bar-process(70.6%);
+            // @include progress-bar-process(70.6%);
         }
 
         &_indesign:after {
-            @include progress-bar-process(56.4%);
+            // @include progress-bar-process(56.4%);
         }
 
         &_dreamweaver:after {
-            @include progress-bar-process(83%);
+            // @include progress-bar-process(83%);
         }
 
         &_after-effects:after {
-            @include progress-bar-process(61.7%);
+            // @include progress-bar-process(61.7%);
         }
 
         &_html-css3:after {
-            @include progress-bar-process(91.2%);
+            // @include progress-bar-process(91.2%);
         }
     }
 }

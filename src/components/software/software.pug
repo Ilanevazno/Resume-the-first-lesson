@@ -1,8 +1,9 @@
-include ../mixin-progress/mixin-progress
+include ../block-header/block-header
+include ../progress/progress
 
 .software
    .software__header
-      +block__header({src: './assets/images/software-icon.jpg', title: 'Software', modif: 'right_side'})
+      +block-header({src: './assets/images/software-icon.jpg', title: 'Software', modif: 'right_side'})
    .software__main
       .software__column-left
          +progress('photoshop')

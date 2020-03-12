@@ -1,4 +1,4 @@
-include ../mixin-header/mixin-header
+include ../block-header/block-header
 mixin education(title, date, university, description)
   .education__subtitle-wrap
     p.education__subtitle= title
@@ -7,7 +7,7 @@ mixin education(title, date, university, description)
   p.education__text= description
 .education
   .education__header
-    +block__header({src: './assets/images/education-icon.jpg', title: 'Education', modif: 'right_side'})
+    +block-header({src: './assets/images/education-icon.jpg', title: 'Education', modif: 'right_side'})
   .education__main
     -
       var exampleDescription = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'

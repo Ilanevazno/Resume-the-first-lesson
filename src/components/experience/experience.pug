@@ -1,4 +1,4 @@
-include ../mixin-header/mixin-header
+include ../block-header/block-header
 mixin experience(title, date, job, description)
    li
     .experience__subtitle-wrap
@@ -8,7 +8,7 @@ mixin experience(title, date, job, description)
     p.experience__text= description
 .experience
   .experience__header
-    +block__header({src: './assets/images/experience-icon.jpg', title: 'experience', modif: 'right_side'})
+    +block-header({src: './assets/images/experience-icon.jpg', title: 'experience', modif: 'right_side'})
   .experience__main
     -
       var exampleText = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'
