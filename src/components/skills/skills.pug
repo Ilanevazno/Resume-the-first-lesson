@@ -1,19 +1,15 @@
 include ../block-header/block-header
 include ../circles/circles.pug
 
-.skills
-  .skills__header
-    +block-header({src: './assets/images/skills-icon.jpg', title: 'Skills'})
-  .skills__main
-    p Creative
-    .skills__creative-progress-bar
-      +circles(12)
-    p Teamwork
-    .skills__Teamwork-progress-bar
-      +circles(12)
-    p Innovate
-    .skills__Innovate-progress-bar
-      +circles(12)
-    p Communication
-    .skills__Communication-progress-bar
-      +circles(12)
+mixin skills(data = {})
+  -
+    let {
+      maxCount = 12
+    } = data
+  .skills
+    .skills__header
+      +block-header({src: 'skills-icon.jpg', title: 'Skills'})
+    .skills__main
+      each item in data
+        p= item.title
+        +circles({ count: maxCount, filled: item.filled })

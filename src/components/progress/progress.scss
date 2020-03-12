@@ -1,18 +1,4 @@
 @mixin progress-bar {
-  width: 14.270rem;
-  height: 1.1rem;
-  background-color: $bar;
-  margin-bottom: 0.95rem;
-}
-@mixin progress-bar-process($width){
-  content: '';
-  display: block;
-  height: 100%;
-  width: $width;
-  background-color: $blue;
-}
-
-@mixin progress-bar {
   width: 22.5vw;
   height: 1.4rem;
   background-color: $bar;
@@ -27,10 +13,13 @@
   }
 }
 
-@mixin progress-bar-process($width){
-  content: '';
-  display: block;
-  height: 100%;
-  width: $width;
-  background-color: $blue;
+.software {
+  &__progress-block {
+    @include progress-bar;
+
+    &-inner {
+      height: 100%;
+      background: $blue;
+    }
+  }
 }

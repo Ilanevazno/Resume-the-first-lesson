@@ -1,23 +1,23 @@
 include ../block-header/block-header
-mixin education(title, date, university, description)
+mixin education-settings(data = {})
+  -
+    let {
+      title = '',
+      date = '',
+      university = '',
+      description = ''
+    } = data
   .education__subtitle-wrap
     p.education__subtitle= title
     p.education__date= date
   p.education__university= university
   p.education__text= description
-.education
-  .education__header
-    +block-header({src: './assets/images/education-icon.jpg', title: 'Education', modif: 'right_side'})
-  .education__main
-    -
-      var exampleDescription = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'
-      var educationList = [
-      {title: 'MASTER DEGREE', date: '// Feb 2011 - Jun 2014', university: 'University name', description: exampleDescription},
-      {title: 'MASTER DEGREE', date: '// Feb 2011 - Jun 2014', university: 'University name', description: exampleDescription},
-      {title: 'MASTER DEGREE', date: '// Feb 2011 - Jun 2014', university: 'University name', description: exampleDescription},
-      {title: 'MASTER DEGREE', date: '// Feb 2011 - Jun 2014', university: 'University name', description: exampleDescription}
-      ]
-    ul
-      each item in educationList
-        li
-          +education(item.title, item.date, item.university, item.description)
+mixin education(data = {})
+  .education
+    .education__header
+      +block-header({src: 'education-icon.jpg', title: 'Education', modif: 'right_side'})
+    .education__main
+      ul
+        each item in data
+          li
+            +education-settings({ title: item.title, date: item.date, university: item.university, description: item.description })

@@ -1,6 +1,13 @@
-.intro
-    .intro__circle--blue
-    .intro__title
-        h1.intro__name Name Here 
-        h2.intro__header surname
-        h3.intro__text Graphic Designer
+mixin intro(data = {})
+    -
+        let {
+            name = '',
+            surname = '',
+            job = ''
+        } = data
+    .intro
+        .intro__circle--blue
+        .intro__title
+            h1.intro__name= name
+            h2.intro__header= surname
+            h3.intro__text= job

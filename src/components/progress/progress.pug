@@ -1,4 +1,10 @@
-mixin progress(progress)
+mixin progress(data = {})
+    -
+        let {
+            name = '',
+            percent = 0
+        } = data
     .software__progress-item
-        p(class= 'software__progress-name'+progress)= progress 
-        div(class= 'software__progress_'+progress)
+        p(class= 'software__progress-'+name)= name 
+        .software__progress-block
+            div(class="software__progress-block-inner" style=`width:${percent}%`)

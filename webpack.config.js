@@ -42,11 +42,15 @@ module.exports = {
       },
       {
         test: /\.pug$/,
-        use: [
-          "html-loader",
-          "pug-html-loader"
-        ]
-      },
+         use: {
+          loader: 'pug-loader',
+           options: {
+            self: true,
+            pretty: true,
+            root: path.resolve(__dirname, 'src')
+           },
+         },
+       },
       {
         test: /\.(s(a|c)|c)ss$/,
         use: [
@@ -67,7 +71,7 @@ module.exports = {
           {
             loader: 'sass-resources-loader',
             options: {
-              resources: ['./src/modules/variables.scss']
+              resources: ['./src/styles/variables.scss']
             }
           }
         ]
@@ -76,7 +80,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: "./src/index.pug",
+      template: "./src/pages/index/index.pug",
       filename: "./index.html"
     }),
     new MiniCssExtractPlugin({

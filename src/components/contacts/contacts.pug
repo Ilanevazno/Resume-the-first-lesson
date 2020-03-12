@@ -1,18 +1,24 @@
 include ../block-header/block-header
-block contacts
+mixin contacts(data = {})
+  -
+    let {
+      address = '',
+      email = '',
+      tel = '',
+      website = ''
+    } = data
   .contacts
     .contacts__header
-      +block-header({src: './assets/images/contacts-icon.jpg', title: 'Contact'})
+      +block-header({src: 'contacts-icon.jpg', title: 'Contact'})
     .contacts__main
-      .contacts__row
-        .contacts__caption address
-        p.contacts__data Main Street, City.
-      .contacts__row
-        .contacts__caption e-mail
-        a(href="mailto:contact@domain.com").contacts__data contact@domain.com
-      .contacts__row
-        .contacts__caption phone
-        a(href="tel:555-555-555").contacts__data 555-555-555
-      .contacts__row
-        .contacts__caption website
-        a(href="http://mywebsite.com" target="_blank" rel="noopener noreferrer").contacts__data www.yourweb.com
+      each item in data
+        .contacts__row
+          .contacts__caption= item.title
+          - if (item.type === "text")
+            p.contacts__data= item.text
+          - if (item.type === "email")
+            a(href="mailto:" + item.text).contacts__data= item.text
+          - if (item.type === "tel")
+            a(href="tel:" + item.text).contacts__data= item.text
+          - if (item.type === "link")
+            a(href= item.text target="_blank" rel="noopener noreferrer").contacts__data= item.text

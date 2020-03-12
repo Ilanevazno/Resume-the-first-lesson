@@ -1,15 +1,9 @@
 include ../block-header/block-header
 include ../progress/progress
-
-.software
-   .software__header
-      +block-header({src: './assets/images/software-icon.jpg', title: 'Software', modif: 'right_side'})
-   .software__main
-      .software__column-left
-         +progress('photoshop')
-         +progress('illustrator')
-         +progress('indesign')
-      .software__column-right
-         +progress('dreamweaver')
-         +progress('after-effects')
-         +progress('html-css3')
+mixin software(data = {})
+   .software
+      .software__header
+         +block-header({src: 'software-icon.jpg', title: 'Software', modif: 'right_side'})
+      .software__main
+         each item in data
+            +progress({ name: item.name, percent: item.percent })

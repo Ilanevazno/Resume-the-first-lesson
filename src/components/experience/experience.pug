@@ -1,22 +1,23 @@
 include ../block-header/block-header
-mixin experience(title, date, job, description)
-   li
+mixin experience-settings(data = {})
+  -
+    let {
+      title = '',
+      date = '',
+      job = '',
+      description = ''
+    } = data
+  li
     .experience__subtitle-wrap
       p.experience__subtitle= title
       p.experience__date= date
     p.experience__job= job
     p.experience__text= description
-.experience
-  .experience__header
-    +block-header({src: './assets/images/experience-icon.jpg', title: 'experience', modif: 'right_side'})
-  .experience__main
-    -
-      var exampleText = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'
-      var experienceList = [
-        {title: 'Company name', date: '// Feb 2011 - Jun 2014', job: 'Your job here', text: exampleText},
-        {title: 'Company name', date: '// Feb 2011 - Jun 2014', job: 'Your job here', text: exampleText},
-        {title: 'Company name', date: '// Feb 2011 - Jun 2014', job: 'Your job here', text: exampleText}
-      ]
-    for item in experienceList
-        ul
-          +experience(item.title, item.date, item.job, item.text)
+mixin experience(data = {})
+  .experience
+    .experience__header
+      +block-header({src: 'experience-icon.jpg', title: 'experience', modif: 'right_side'})
+    .experience__main
+      for item in data
+          ul
+            +experience-settings({ title: item.title, date: item.date, job: item.job, description: item.text})

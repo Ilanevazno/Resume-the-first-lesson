@@ -1,4 +1,12 @@
-mixin circles(count)
-    ul
-        - for (var x = 0; x < count; x++)
-            li
+mixin circles(data = {})
+    -
+        let {
+            count = 0,
+            filled = 0
+        } = data;
+    ul.circles
+        - for (var x = 0; x < filled; x += 1)
+            li.circles__item_filled
+        - while (count - filled > 0)
+            li.circles__item
+            - count -= 1
