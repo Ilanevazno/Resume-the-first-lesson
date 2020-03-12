@@ -13,9 +13,12 @@ You can enter to [Demo page](https://ilanevazno.github.io/Resume-the-first-lesso
 
 ## Git
 clone this repository with:
-- ```https://github.com/Ilanevazno/Resume-the-first-lesson.git```
+- ```git clone https://github.com/Ilanevazno/Resume-the-first-lesson.git```
 
 ## NPM scripts
+
+#### Install project
+```npm install``` installing dependencies before running
 
 #### To start locally 
 - ```npm run watch``` for development environment in watch mode
