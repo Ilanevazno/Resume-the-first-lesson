@@ -8,14 +8,14 @@ Homework for fullstack development. Here we make html layout for resume.
 - [x] BEM methodology
 - [x] Webpack
 
-# Demo page
+## Demo page
 You can enter to [Demo page](https://ilanevazno.github.io/Resume-the-first-lesson/ "Demo page") for looking at this project.
-
-## NPM scripts
 
 ## git
 clone this repository with:
 - ```https://github.com/Ilanevazno/Resume-the-first-lesson.git```
+
+## NPM scripts
 
 #### To start locally 
 - ```npm run watch``` for development environment in watch mode
