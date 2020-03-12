@@ -11,7 +11,7 @@ Homework for fullstack development. Here we make html layout for resume.
 ## Demo page
 You can enter to [Demo page](https://ilanevazno.github.io/Resume-the-first-lesson/ "Demo page") for looking at this project.
 
-## git
+## Git
 clone this repository with:
 - ```https://github.com/Ilanevazno/Resume-the-first-lesson.git```
 
