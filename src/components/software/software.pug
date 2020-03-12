@@ -1,12 +1,14 @@
+include ../mixin-progress/mixin-progress
+
 .software
    .software__header
       +block__header({src: './assets/images/software-icon.jpg', title: 'Software', modif: 'right_side'})
    .software__main
       .software__column-left
-         +skills('photoshop')
-         +skills('illustrator')
-         +skills('indesign')
+         +progress('photoshop')
+         +progress('illustrator')
+         +progress('indesign')
       .software__column-right
-         +skills('dreamweaver')
-         +skills('after-effects')
-         +skills('html-css3')
+         +progress('dreamweaver')
+         +progress('after-effects')
+         +progress('html-css3')

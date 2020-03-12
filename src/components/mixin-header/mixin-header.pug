@@ -1,0 +1,7 @@
+mixin block__header({src, title, modif})
+    .block__header
+        div(class="block__header-image block__header-image--"+ modif)
+            img(src= src alt= title)
+        .block__header-title
+            h2.block__header-text= title
+        .block__header-title-line
