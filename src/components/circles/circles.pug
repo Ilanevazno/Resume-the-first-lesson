@@ -5,7 +5,7 @@ mixin circles(data = {})
             filled = 0
         } = data;
     ul.circles
-        - for (var x = 0; x < filled; x += 1)
+        - for (let x = 0; x < filled; x += 1)
             li.circles__item_filled
         - while (count - filled > 0)
             li.circles__item

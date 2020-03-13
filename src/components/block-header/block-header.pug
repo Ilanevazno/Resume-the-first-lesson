@@ -1,7 +1,7 @@
 mixin block-header({src, title, modif})
-    .block__header
-        div(class="block__header-image block__header-image--"+ modif)
+    .block-header
+        div(class="block-header__image block-header__image_"+ modif)
             img(src=require('../../assets/images/' + src) alt= title)
-        .block__header-title
-            h2.block__header-text= title
-        .block__header-title-line
+        .block-header__title
+            h2.block-header__text= title
+        .block-header__title-line
