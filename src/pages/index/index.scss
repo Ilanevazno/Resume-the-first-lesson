@@ -1,43 +1,43 @@
-*{
-    box-sizing: border-box;
-    font-family: 'Myriad pro';
+* {
+  box-sizing: border-box;
+  font-family: "Myriad pro";
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    min-width: 320px;
-    max-width: 1920px;
-    box-sizing: border-box;
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  max-width: 1920px;
+  box-sizing: border-box;
 }
-html{
-    font-size: 24px;
+html {
+  font-size: 24px;
 }
 h1,
 h2,
-h3{
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
+h3 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
 }
 
 .main {
-    p {
-        font-size: 0.74rem;
-    }
-    &__container {
-        display: flex;
-        padding: 5rem 3rem 5rem 4rem;
-    }
+  p {
+    font-size: 0.74rem;
+  }
+  &__container {
+    display: flex;
+    padding: 5rem 3rem 5rem 4rem;
+  }
 
-    &__left-container {
-        max-width: 43.5%;
-        box-sizing: border-box;
-        padding-right: 6.7%;
-    }
+  &__left-container {
+    max-width: 43.5%;
+    box-sizing: border-box;
+    padding-right: 6.7%;
+  }
 
-    &__right-container {
-        max-width: 57%;
-        box-sizing: border-box;
-    }
+  &__right-container {
+    max-width: 57%;
+    box-sizing: border-box;
+  }
 }

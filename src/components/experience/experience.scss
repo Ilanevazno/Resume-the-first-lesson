@@ -1,73 +1,73 @@
 .experience {
-    &__header {
-        margin-top: 3.5rem;
-    }
-    &__main {
-        display: flex;
-        flex-direction: column;   
-        margin-top: 2.1rem;
+  &__header {
+    margin-top: 3.5rem;
+  }
+  &__main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.1rem;
 
-        ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            margin-left: 2.75rem;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      margin-left: 2.75rem;
 
-            li {
-                position: relative;
-                margin-top: 0.65rem;
-            }
-
-            li:before {
-                content: '';
-                display: block;
-                width: 1.3rem;
-                height: 1.3rem;
-                border-radius: 50%;
-                position: absolute;
-                left: -45px;
-                top: 11px;
-                background-color: black;
-            }
-        }
-    }
-
-    &__text {
-        margin: 0.6rem 0 0 0.9rem;
-        font-family: 'PT Sans', Arial, sans-serif;
-        font-size: 0.9rem;
-        line-height: 1.2rem;
-    }
-
-    &__subtitle-wrap {
-        display: flex;
-    }
-
-    &__subtitle {
-        color: black;
-        font-size: 1.65rem;
+      li {
         position: relative;
-        font-weight: bold;
-        margin: 0;
-        padding-left: 2%;
-        text-transform: uppercase;
-        white-space: nowrap;
-    }
+        margin-top: 0.65rem;
+      }
 
-    &__date {
-        font-family: 'PT Sans', Arial, sans-serif;
-        font-size: 1.52rem;
-        margin: 0;
-        display: flex;
-        padding-left: 3%;
-        align-items: center;
-        white-space: nowrap;
+      li:before {
+        content: "";
+        display: block;
+        width: 1.3rem;
+        height: 1.3rem;
+        border-radius: 50%;
+        position: absolute;
+        left: -45px;
+        top: 11px;
+        background-color: black;
+      }
     }
+  }
 
-    &__job {
-        font-size: 1.4rem;
-        text-transform: uppercase;
-        margin: 0.4rem 0 0 0.7rem;
-        font-family: 'PT Sans', Arial, sans-serif;
-    }
+  &__text {
+    margin: 0.6rem 0 0 0.9rem;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+
+  &__subtitle-wrap {
+    display: flex;
+  }
+
+  &__subtitle {
+    color: black;
+    font-size: 1.65rem;
+    position: relative;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 2%;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  &__date {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 1.52rem;
+    margin: 0;
+    display: flex;
+    padding-left: 3%;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  &__job {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin: 0.4rem 0 0 0.7rem;
+    font-family: "PT Sans", Arial, sans-serif;
+  }
 }

@@ -1,37 +1,37 @@
 .contacts {
-    &__caption {
-        color: $blue;
-        font-size: 1.3rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        width: 8.2rem;
-    }
+  &__caption {
+    color: $blue;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 8.2rem;
+  }
 
-    &__data {
-        font-family: 'PT Sans', Arial, sans-serif;
-        font-size: 1.28rem;
-    }
-    margin-top: 3.2rem;
+  &__data {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 1.28rem;
+  }
+  margin-top: 3.2rem;
 
-    &__row {
-        display: flex;
-        margin-top: 1.88rem;
-    }
+  &__row {
+    display: flex;
+    margin-top: 1.88rem;
+  }
 
-    &__main {
-        display: flex;
-        flex-direction: column;
+  &__main {
+    display: flex;
+    flex-direction: column;
 
-        p {
-            margin: 0;  
-            display: flex;
-            align-items: center;
-        }
+    p {
+      margin: 0;
+      display: flex;
+      align-items: center;
     }
+  }
 
-    a {
-        text-decoration: none;
-        color: $urlColor;
-        word-break: break-word;
-    }
+  a {
+    text-decoration: none;
+    color: $urlColor;
+    word-break: break-word;
+  }
 }

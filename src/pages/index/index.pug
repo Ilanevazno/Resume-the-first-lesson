@@ -6,27 +6,27 @@ link(rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-3
 link(rel="icon" sizes="any" mask href="./assets/favicons/safari-pinned-tab.svg")
 html
 head
-    block title
-        title Resume Layout
+  block title
+    title Resume Layout
 body
-    block content
-        -
-            const data = require('../../assets/data/data.json')
-            const { intro, profile, contacts, skills, education, experience, software } = data
-        include ../../components/intro/intro.pug
-        include ../../components/profile/profile.pug
-        include ../../components/contacts/contacts.pug
-        include ../../components/skills/skills.pug
-        include ../../components/education/education.pug
-        include ../../components/experience/experience.pug
-        include ../../components/software/software.pug
-        .main__container
-            .main__left-container
-                +intro(intro)
-                +profile(profile)
-                +contacts(contacts)
-                +skills(skills)
-            .main__right-container
-                +education(education)
-                +experience(experience)
-                +software(software)
+  block content
+    -
+      const data = require('../../assets/data/data.json')
+      const { intro, profile, contacts, skills, education, experience, software } = data
+    include ../../components/intro/intro.pug
+    include ../../components/profile/profile.pug
+    include ../../components/contacts/contacts.pug
+    include ../../components/skills/skills.pug
+    include ../../components/education/education.pug
+    include ../../components/experience/experience.pug
+    include ../../components/software/software.pug
+    .main__container
+      .main__left-container
+        +intro(intro)
+        +profile(profile)
+        +contacts(contacts)
+        +skills(skills)
+      .main__right-container
+        +education(education)
+        +experience(experience)
+        +software(software)

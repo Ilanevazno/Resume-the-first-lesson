@@ -1,59 +1,59 @@
 .intro {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-left: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 1rem;
 
-    &__circle {
-        &_blue {
-            width: 13rem;
-            height: 13rem;
-            background-color: $blue;
-            border-radius: 50%;
-            position: relative;
-            margin-top: 1.5rem;
+  &__circle {
+    &_blue {
+      width: 13rem;
+      height: 13rem;
+      background-color: $blue;
+      border-radius: 50%;
+      position: relative;
+      margin-top: 1.5rem;
 
-            &:after {
-                content: '';
-                width: 15rem;
-                height: 15rem;
-                border: 1px solid $blue;
-                border-radius: 50%;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                margin-right: -50%;
-                transform: translate(-50%, -50%);
-                display: block;
-            }
-        }
+      &:after {
+        content: "";
+        width: 15rem;
+        height: 15rem;
+        border: 1px solid $blue;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        display: block;
+      }
     }
+  }
 
-    &__title {
-        margin-top: 2.5rem;
-        text-align: center;
-    }
+  &__title {
+    margin-top: 2.5rem;
+    text-align: center;
+  }
 
-    &__name {
-        font-weight: lighter;
-        font-size: 3.5rem;
-        transition: .2s ease-in-out all;
-        word-break: break-word;
-    }
+  &__name {
+    font-weight: lighter;
+    font-size: 3.5rem;
+    transition: 0.2s ease-in-out all;
+    word-break: break-word;
+  }
 
-    &__header {
-        font-weight: bold;
-        font-size: 4rem;
-        line-height: 2.4rem;
-        transition: .2s ease-in-out all;
-        word-break: break-word;
-    }
+  &__header {
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 2.4rem;
+    transition: 0.2s ease-in-out all;
+    word-break: break-word;
+  }
 
-    &__text {
-        text-align: center;
-        line-height: 5rem;
-        font-size: 1.56rem;
-        transition: .2s ease-in-out all;
-        word-break: break-word;
-    }
+  &__text {
+    text-align: center;
+    line-height: 5rem;
+    font-size: 1.56rem;
+    transition: 0.2s ease-in-out all;
+    word-break: break-word;
+  }
 }

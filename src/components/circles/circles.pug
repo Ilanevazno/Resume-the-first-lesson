@@ -1,12 +1,12 @@
 mixin circles(data = {})
-    -
-        let {
-            count = 0,
-            filled = 0
-        } = data;
-    ul.circles
-        - for (let x = 0; x < filled; x += 1)
-            li.circles__item_filled
-        - while (count - filled > 0)
-            li.circles__item
-            - count -= 1
+  -
+    let {
+      count = 0,
+      filled = 0
+    } = data;
+  ul.circles
+    - for (let x = 0; x < filled; x += 1)
+      li.circles__item_filled
+    - while (count - filled > 0)
+      li.circles__item
+      - count -= 1

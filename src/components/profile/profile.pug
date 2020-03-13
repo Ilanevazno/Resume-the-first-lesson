@@ -1,11 +1,11 @@
 include ../block-header/block-header
 mixin profile(data = {})
-    -
-        let {
-            text = '',
-            boldText = ''
-        } = data
-    .profile
-        +block-header({src: 'profile-icon.jpg', title: 'Profile'})
-        p.profile__text= text + ' '
-            b= boldText
+  -
+    let {
+      text = '',
+      boldText = ''
+    } = data
+  .profile
+    +block-header({src: 'profile-icon.jpg', title: 'Profile'})
+    p.profile__text= text + ' '
+      b= boldText
