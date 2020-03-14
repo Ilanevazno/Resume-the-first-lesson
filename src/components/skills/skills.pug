@@ -4,11 +4,11 @@ include ../circles/circles.pug
 mixin skills(data = {})
   -
     let {
-      maxCount = 12
-    } = data
+      maxCount = 12,
+    } = data;
   .skills
     .skills__header
-      +block-header({src: 'skills-icon.jpg', title: 'Skills'})
+      +block-header({ src: 'skills-icon.jpg', title: 'Skills' })
     .skills__main
       each item in data
         p= item.title

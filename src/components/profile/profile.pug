@@ -3,9 +3,9 @@ mixin profile(data = {})
   -
     let {
       text = '',
-      boldText = ''
-    } = data
+      boldText = '',
+    } = data;
   .profile
-    +block-header({src: 'profile-icon.jpg', title: 'Profile'})
+    +block-header({ src: 'profile-icon.jpg', title: 'Profile' })
     p.profile__text= text + ' '
       b= boldText
