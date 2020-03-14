@@ -36,28 +36,30 @@
     line-height: 1.2rem;
   }
 
-  &__subtitle-wrap {
-    display: flex;
-  }
-
   &__subtitle {
-    color: $blue;
-    font-size: 1.65rem;
-    position: relative;
-    font-weight: bold;
-    margin: 0;
-    padding-left: 2%;
-    white-space: nowrap;
-  }
+    &-wrap {
+      display: flex;
+    }
 
-  &__date {
-    font-family: "PT Sans", Arial, sans-serif;
-    font-size: 1.52rem;
-    margin: 0;
-    display: flex;
-    padding-left: 3%;
-    align-items: center;
-    white-space: nowrap;
+    &-text {
+      color: $blue;
+      font-size: 1.65rem;
+      position: relative;
+      font-weight: bold;
+      margin: 0;
+      padding-left: 2%;
+      white-space: nowrap;
+    }
+
+    &-date {
+      font-family: "PT Sans", Arial, sans-serif;
+      font-size: 1.52rem;
+      margin: 0;
+      display: flex;
+      padding-left: 3%;
+      align-items: center;
+      white-space: nowrap;
+    }
   }
 
   &__university {

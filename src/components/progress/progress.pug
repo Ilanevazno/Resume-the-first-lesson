@@ -4,7 +4,7 @@ mixin progress(data = {})
       name = '',
       percent = 0
     } = data
-  .software__progress-item
-    p(class= 'software__progress-'+name)= name 
-    .software__progress-block
-      div(class="software__progress-block-inner" style=`width:${percent}%`)
+  .progress
+    p(class= 'progress__title-'+name)= name 
+    .progress__block
+      div(class="progress__block-inner" style=`width:${percent}%`)

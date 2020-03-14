@@ -13,8 +13,8 @@
   }
 }
 
-.software {
-  &__progress-block {
+.progress {
+  &__block {
     @include progress-bar;
 
     &-inner {
