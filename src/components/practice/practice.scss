@@ -1,24 +1,22 @@
-.experience {
+.practice {
+  display: flex;
+  flex-direction: column;
+
   &__header {
     margin-top: 3.5rem;
   }
-  &__main {
-    display: flex;
-    flex-direction: column;
-    margin-top: 2.1rem;
 
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      margin-left: 2.75rem;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 2.75rem;
 
-      li {
-        position: relative;
-        margin-top: 0.65rem;
-      }
+    li {
+      position: relative;
+      margin-top: 0.65rem;
 
-      li:before {
+      &:before {
         content: "";
         display: block;
         width: 1.3rem;
@@ -28,6 +26,20 @@
         left: -45px;
         top: 11px;
         background-color: black;
+      }
+    }
+  }
+
+  &_theme {
+    &_black {
+      margin-top: 1.8rem;
+    }
+
+    &_blue {
+      margin-top: 0.8rem;
+
+      .practice__subtitle {
+        color: $blue;
       }
     }
   }

@@ -1,23 +1,8 @@
 include ../block-header/block-header
-mixin education-settings(data = {})
-  -
-    let {
-      title = '',
-      date = '',
-      university = '',
-      description = '',
-    } = data;
-  .education__subtitle-wrap
-    p.education__subtitle-text= title
-    p.education__subtitle-date= date
-  p.education__university= university
-  p.education__text= description
+include ../practice/practice
 mixin education(data = {})
   .education
     .education__header
       +block-header({src: 'education-icon.jpg', title: 'Education', modif: 'right_side'})
     .education__main
-      ul
-        each item in data
-          li
-            +education-settings({ title: item.title, date: item.date, university: item.university, description: item.description })
+      +practice(data, data.theme = 'blue')
