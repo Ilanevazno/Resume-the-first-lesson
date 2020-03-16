@@ -3,7 +3,7 @@ include ../circles-progress/circles-progress.pug
 
 mixin skills(data = {})
   -
-    let { maxCount = 12 } = data;
+    const { maxCount = 12 } = data;
   .skills
     .skills__header
       +block-header({ src: 'skills-icon.jpg', title: 'Skills' })
