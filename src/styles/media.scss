@@ -1,144 +1,144 @@
-@media screen and (max-width: 1600px) {
-  html {
-    font-size: 20px;
-  }
-  body {
-    font-size: 20px;
-  }
-  .block {
-    &__header-title {
-      h2 {
-        font-size: 1.5rem;
-      }
-    }
-  }
+// @media screen and (max-width: 1600px) {
+//   html {
+//     font-size: 20px;
+//   }
+//   body {
+//     font-size: 20px;
+//   }
+//   .block {
+//     &__header-title {
+//       h2 {
+//         font-size: 1.5rem;
+//       }
+//     }
+//   }
 
-  .education {
-    &__date {
-      font-size: 1rem;
-    }
-  }
+//   .education {
+//     &__date {
+//       font-size: 1rem;
+//     }
+//   }
 
-  .experience {
-    &__date {
-      font-size: 1rem;
-    }
-  }
+//   .experience {
+//     &__date {
+//       font-size: 1rem;
+//     }
+//   }
 
-  .intro {
-    &__name {
-      font-size: 2.5rem;
-      text-align: center;
-    }
+//   .intro {
+//     &__name {
+//       font-size: 2.5rem;
+//       text-align: center;
+//     }
 
-    &__header {
-      font-size: 2rem;
-      text-align: center;
-    }
+//     &__header {
+//       font-size: 2rem;
+//       text-align: center;
+//     }
 
-    &__text {
-      line-height: normal;
-      font-size: 1.5rem;
-      text-align: center;
-    }
-  }
-}
-@media screen and (max-width: 1280px) {
-  .contacts {
-    &__caption {
-      width: 39.6%;
-    }
-    &__data {
-      font-size: 1rem;
-    }
-  }
-  .education {
-    &__subtitle-wrap {
-      flex-direction: column;
-    }
-  }
+//     &__text {
+//       line-height: normal;
+//       font-size: 1.5rem;
+//       text-align: center;
+//     }
+//   }
+// }
+// @media screen and (max-width: 1280px) {
+//   .contacts {
+//     &__caption {
+//       width: 39.6%;
+//     }
+//     &__data {
+//       font-size: 1rem;
+//     }
+//   }
+//   .education {
+//     &__subtitle-wrap {
+//       flex-direction: column;
+//     }
+//   }
 
-  .experience {
-    &__subtitle-wrap {
-      flex-direction: column;
-    }
-  }
-}
-@media screen and (max-width: 960px) {
-  .profile {
-    &__text {
-      margin: 1.5rem 0 2rem 0;
-    }
-  }
-  .main {
-    &__container {
-      flex-direction: column;
-      padding: 1rem;
-    }
+//   .experience {
+//     &__subtitle-wrap {
+//       flex-direction: column;
+//     }
+//   }
+// }
+// @media screen and (max-width: 960px) {
+//   .profile {
+//     &__text {
+//       margin: 1.5rem 0 2rem 0;
+//     }
+//   }
+//   .main {
+//     &__container {
+//       flex-direction: column;
+//       padding: 1rem;
+//     }
 
-    &__left-container {
-      max-width: 100%;
-      padding: 0;
-    }
+//     &__left-container {
+//       max-width: 100%;
+//       padding: 0;
+//     }
 
-    &__right-container {
-      max-width: 100%;
-    }
-  }
+//     &__right-container {
+//       max-width: 100%;
+//     }
+//   }
 
-  .education {
-    margin-top: 3rem;
-  }
+//   .education {
+//     margin-top: 3rem;
+//   }
 
-  .software {
-    &__main {
-      p {
-        font-size: 1rem;
-      }
-    }
-    &__progress-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-}
-@media screen and (max-width: 560px) {
-  html {
-    font-size: 16px;
-  }
-  .contacts {
-    &__row {
-      justify-content: space-between;
-    }
-  }
-  .block {
-    &__header-image {
-      max-width: 16vw;
-      height: 16vw;
-    }
-  }
-  .intro {
-    padding: 0;
-  }
+//   .software {
+//     &__main {
+//       p {
+//         font-size: 1rem;
+//       }
+//     }
+//     &__progress-item {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//     }
+//   }
+// }
+// @media screen and (max-width: 560px) {
+//   html {
+//     font-size: 16px;
+//   }
+//   .contacts {
+//     &__row {
+//       justify-content: space-between;
+//     }
+//   }
+//   .block {
+//     &__header-image {
+//       max-width: 16vw;
+//       height: 16vw;
+//     }
+//   }
+//   .intro {
+//     padding: 0;
+//   }
 
-  .skills {
-    &__main {
-      ul {
-        padding-left: 5%;
-        padding-right: 5%;
-      }
-    }
-  }
+//   .skills {
+//     &__main {
+//       ul {
+//         padding-left: 5%;
+//         padding-right: 5%;
+//       }
+//     }
+//   }
 
-  .education {
-    ul {
-      li {
-        &:before {
-          left: -28px;
-          top: 6px;
-        }
-      }
-    }
-  }
-}
+//   .education {
+//     ul {
+//       li {
+//         &:before {
+//           left: -28px;
+//           top: 6px;
+//         }
+//       }
+//     }
+//   }
+// }

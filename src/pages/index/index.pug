@@ -15,13 +15,14 @@ block content
   -
     const data = require('../../assets/data/data.json');
     const { intro, profile, contacts, skills, education, experience, software } = data;
-  .index__container
-    .index__left-container
-      +intro(intro)
-      +profile(profile)
-      +contacts(contacts)
-      +skills(skills)
-    .index__right-container
-      +education(education)
-      +experience(experience)
-      +software(software)
+  main.index
+    .index__container
+      .index__container-left
+        +intro(intro)
+        +profile(profile)
+        +contacts(contacts)
+        +skills(skills)
+      .index__container-right
+        +education(education)
+        +experience(experience)
+        +software(software)
