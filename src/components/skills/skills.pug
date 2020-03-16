@@ -1,5 +1,5 @@
 include ../block-header/block-header
-include ../circles/circles.pug
+include ../circles-progress/circles-progress.pug
 
 mixin skills(data = {})
   -
@@ -10,4 +10,4 @@ mixin skills(data = {})
     .skills__main
       each item in data
         p= item.title
-        +circles({ count: maxCount, filled: item.filled })
+        +circles-progress({ count: maxCount, filled: item.filled })
