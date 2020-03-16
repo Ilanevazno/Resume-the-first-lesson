@@ -14,11 +14,12 @@ mixin contacts(data = {})
       each item in data
         .contacts__row
           .contacts__caption= item.title
-          - if (item.type === "text")
-            p.contacts__data= item.text
-          - if (item.type === "email")
-            a(href="mailto:" + item.text).contacts__data= item.text
-          - if (item.type === "tel")
-            a(href="tel:" + item.text).contacts__data= item.text
-          - if (item.type === "link")
-            a(href= item.text target="_blank" rel="noopener noreferrer").contacts__data= item.text
+          case item.type
+            when 'text'
+              p.contacts__data= item.text
+            when 'email'
+              a(href="mailto:" + item.text).contacts__data= item.text
+            when 'tel'
+              a(href="tel:" + item.text).contacts__data= item.text
+            when 'link'
+              a(href= item.text target="_blank" rel="noopener noreferrer").contacts__data= item.text
