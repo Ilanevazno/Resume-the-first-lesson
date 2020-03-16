@@ -5,6 +5,6 @@ mixin progress(data = {})
       percent = 0,
     } = data;
   .progress
-    p(class= 'progress__title-'+name)= name
+    p(class=`progress__title-${name}`)= name
     .progress__block
       div(class="progress__block-inner" style=`width:${percent}%`)

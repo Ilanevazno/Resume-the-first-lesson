@@ -9,7 +9,7 @@ mixin practice(data = {})
     } = data;
     let itemClassName = "practice";
     if (theme)
-      itemClassName += ` ${itemClassName}` + `_theme_${theme}`
+      itemClassName += ` ${itemClassName}_theme_${theme}`
   div(class= itemClassName)
     ul
       for item in data
