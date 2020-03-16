@@ -51,10 +51,6 @@
     line-height: 1.2rem;
   }
 
-  &__subtitle-wrap {
-    display: flex;
-  }
-
   &__subtitle {
     color: black;
     font-size: 1.65rem;
@@ -64,6 +60,14 @@
     padding-left: 2%;
     text-transform: uppercase;
     white-space: nowrap;
+
+    &-wrap {
+      display: flex;
+
+      @include media-breakpoint($mobile) {
+        flex-direction: column;
+      }
+    }
   }
 
   &__date {

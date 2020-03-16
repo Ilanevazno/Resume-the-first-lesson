@@ -11,11 +11,43 @@
       max-width: 43.5%;
       box-sizing: border-box;
       padding-right: 6.7%;
+
+      @include media-breakpoint($tablet) {
+        max-width: 100%;
+      }
     }
 
     &-right {
       max-width: 57%;
       box-sizing: border-box;
+
+      @include media-breakpoint($tablet) {
+        max-width: 100%;
+      }
     }
+
+    @include media-breakpoint($tablet) {
+      flex-direction: column;
+    }
+  }
+
+  &__profile {
+    margin-top: 3.2rem;
+  }
+
+  &__skills {
+    margin-top: 3.2rem;
+
+    @include media-breakpoint ($tablet) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__experience {
+    margin-top: 3.5rem;
+  }
+
+  &__software {
+    margin-top: 3.5rem;
   }
 }

@@ -12,6 +12,10 @@ html {
   font-family: "Myriad pro";
   background: white;
   color: black;
+
+  @include media-breakpoint($desktop-small) {
+    font-size: 16px;
+  }
 }
 
 h1,

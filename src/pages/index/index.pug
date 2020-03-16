@@ -18,11 +18,18 @@ block content
   main.index
     .index__container
       .index__container-left
-        +intro(intro)
-        +profile(profile)
-        +contacts(contacts)
-        +skills(skills)
+        .index__intro
+          +intro(intro)
+        .index__profile
+          +profile(profile)
+        .index__contacts
+          +contacts(contacts)
+        .index__skills
+          +skills(skills)
       .index__container-right
-        +education(education)
-        +experience(experience)
-        +software(software)
+        .index__education
+          +education(education)
+        .index__experience
+          +experience(experience)
+        .index__software
+          +software(software)

@@ -1,14 +1,10 @@
 .software {
-  &__header {
-    margin-top: 3.5rem;
-  }
-
   &__main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-left: 0.36rem;
-    margin-top: 1.3rem;
+    margin-top: 1rem;
 
     p {
       font-family: "PT Sans", Arial, sans-serif;
