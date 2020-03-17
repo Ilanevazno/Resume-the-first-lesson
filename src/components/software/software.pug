@@ -6,4 +6,9 @@ mixin software(data = {})
       +block-header({ src: 'software-icon.jpg', title: 'Software', theme: 'right-side' })
     .software__main
       each item in data
-        +progress({ name: item.name, percent: item.percent })
+        -
+          let {
+            name,
+            percent,
+          } = item;
+        +progress({ name: name, percent: percent })

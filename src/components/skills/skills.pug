@@ -9,5 +9,10 @@ mixin skills(data = {})
       +block-header({ src: 'skills-icon.jpg', title: 'Skills' })
     .skills__main
       each item in data
-        p.skills__main-title= item.title
-        +circles-progress({ count: maxCount, filled: item.filled, listClassName: 'skills__main-list' })
+        -
+          let {
+            title,
+            filled,
+          } = item;
+        p.skills__main-title= title
+        +circles-progress({ count: maxCount, filled: filled, listClassName: 'skills__main-list' })

@@ -7,9 +7,16 @@ mixin practice(data = {}, theme)
   div(class= blockClassName)
     ul.practice__list
       for item in data
+        -
+          let {
+            title,
+            date,
+            subtitle,
+            description,
+          } = item;
         li.practice__list-item
           .practice__subtitle-wrap
-            p.practice__subtitle= item.title
-            p.practice__date= item.date
-          p.practice__job= item.subtitle
-          p.practice__text= item.description
+            p.practice__subtitle= title
+            p.practice__date= date
+          p.practice__job= subtitle
+          p.practice__text= description
