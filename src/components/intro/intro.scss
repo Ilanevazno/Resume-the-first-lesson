@@ -13,7 +13,7 @@
       margin-top: 1.5rem;
 
       &:after {
-        content: "";
+        content: '';
         width: 15rem;
         height: 15rem;
         border: 1px solid $blue;
@@ -38,14 +38,14 @@
   }
 
   &__name {
-    font: lighter 3.5rem "Myriad pro", Arial, sans-serif;
+    font: lighter 3.5rem 'Myriad pro', Arial, sans-serif;
     transition: 0.2s ease-in-out all;
     word-break: break-word;
     text-transform: uppercase;
   }
 
   &__header {
-    font: bold 4rem "Myriad pro", Arial, sans-serif;
+    font: bold 4rem 'Myriad pro', Arial, sans-serif;
     line-height: 2.4rem;
     transition: 0.2s ease-in-out all;
     word-break: break-word;

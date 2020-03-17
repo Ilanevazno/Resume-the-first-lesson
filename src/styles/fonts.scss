@@ -1,26 +1,26 @@
 @font-face {
-  font-family: "Myriad pro";
-  src: url("../assets/fonts/MyriadPro-Regular.eot"), local("../assets/fonts/MyriadPro-Regular"),
-    url("../assets/fonts/MyriadPro-Regular.woff") format("woff"),
-    url("../assets/fonts/MyriadPro-Regular.ttf") format("ttf"),
-    url("../assets/fonts/MyriadPro-Regular.svg") format("svg");
+  font-family: 'Myriad pro';
+  src: url('../assets/fonts/MyriadPro-Regular.eot'), local('../assets/fonts/MyriadPro-Regular'),
+    url('../assets/fonts/MyriadPro-Regular.woff') format('woff'),
+    url('../assets/fonts/MyriadPro-Regular.ttf') format('ttf'),
+    url('../assets/fonts/MyriadPro-Regular.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "Myriad pro";
-  src: local("../assets/fonts/MyriadPro-Bold"), url("../assets/fonts/MyriadPro-Bold.eot"),
-    url("../assets/fonts/MyriadPro-Bold.woff") format("woff"), url("../assets/fonts/MyriadPro-Bold.ttf") format("ttf"),
-    url("../assets/fonts/MyriadPro-Bold.svg") format("svg");
+  font-family: 'Myriad pro';
+  src: local('../assets/fonts/MyriadPro-Bold'), url('../assets/fonts/MyriadPro-Bold.eot'),
+    url('../assets/fonts/MyriadPro-Bold.woff') format('woff'), url('../assets/fonts/MyriadPro-Bold.ttf') format('ttf'),
+    url('../assets/fonts/MyriadPro-Bold.svg') format('svg');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
-  font-family: "Myriad pro";
-  src: local("../assets/fonts/MyriadPro-LightSemiExt"), url("../assets/fonts/MyriadPro-LightSemiExt.eot"),
-    url("../assets/fonts/MyriadPro-LightSemiExt.woff") format("woff"),
-    url("../assets/fonts/MyriadPro-LightSemiExt.ttf") format("ttf"),
-    url("../assets/fonts/MyriadPro-LightSemiExt.svg") format("svg");
+  font-family: 'Myriad pro';
+  src: local('../assets/fonts/MyriadPro-LightSemiExt'), url('../assets/fonts/MyriadPro-LightSemiExt.eot'),
+    url('../assets/fonts/MyriadPro-LightSemiExt.woff') format('woff'),
+    url('../assets/fonts/MyriadPro-LightSemiExt.ttf') format('ttf'),
+    url('../assets/fonts/MyriadPro-LightSemiExt.svg') format('svg');
   font-weight: lighter;
   font-style: normal;
 }
