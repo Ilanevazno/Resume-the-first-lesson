@@ -5,4 +5,5 @@ mixin experience(data = {})
     .experience__header
       +block-header({src: 'experience-icon.jpg', title: 'experience', theme: 'right-side'})
     .experience__main
-      +practice(data)
+      .experience__main-item
+        +practice(data)

@@ -15,4 +15,5 @@ mixin skills(data = {})
             filled,
           } = item;
         p.skills__main-title= title
-        +circles-progress({ count: maxCount, filled: filled, listClassName: 'skills__main-list' })
+        .skills__main-progress
+          +circles-progress({ count: maxCount, filled: filled, listClassName: 'skills__main-list' })

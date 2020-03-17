@@ -5,34 +5,24 @@
   padding-left: 1rem;
 
   &__avatar {
-      width: 13rem;
-      height: 13rem;
-      background-color: $blue;
-      border-radius: 50%;
-      position: relative;
-      margin-top: 1.5rem;
-
-      &:after {
-        content: '';
-        width: 15rem;
-        height: 15rem;
-        border: 1px solid $blue;
-        border-radius: 50%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        display: block;
-      }
+    width: 15rem;
+    height: 15rem;
+    background-color: $blue;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 0.6rem;
+    box-shadow: inset 0px 0px 0px 22px white;
+    border: 1px solid $blue;
 
       &-picture {
+        border-radius: 50%;
         width: 100%;
+        padding: 0.9rem;
       }
   }
 
   &__title {
-    margin-top: 2.5rem;
+    margin-top: 1.2rem;
     text-align: center;
     text-transform: uppercase;
   }

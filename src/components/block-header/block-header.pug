@@ -2,7 +2,7 @@ mixin block-header({ src, title, theme })
   -
     theme = theme ? `block-header__text_theme_${theme}` : '';
   .block-header
-    div(class=`block-header__picture-container`)
+    div(class="block-header__picture-container")
       img(src=require(`../../assets/images/${src}`) alt= title class="block-header__picture-item")
     .block-header__title
       h2(class=`block-header__text ${theme}`)= title

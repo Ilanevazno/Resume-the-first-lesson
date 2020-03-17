@@ -11,4 +11,5 @@ mixin software(data = {})
             name,
             percent,
           } = item;
-        +progress({ name: name, percent: percent })
+        .software__main-item
+          +progress({ name: name, percent: percent })

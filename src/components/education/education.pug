@@ -5,4 +5,5 @@ mixin education(data = {})
     .education__header
       +block-header({src: 'education-icon.jpg', title: 'Education', theme: 'right-side'})
     .education__main
-      +practice(data, 'blue')
+      .education__main-item
+        +practice(data, 'blue')
