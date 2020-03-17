@@ -3,6 +3,6 @@ include ../practice/practice
 mixin education(data = {})
   .education
     .education__header
-      +block-header({src: 'education-icon.jpg', title: 'Education', modif: 'right_side'})
+      +block-header({src: 'education-icon.jpg', title: 'Education', theme: 'right-side'})
     .education__main
       +practice(data, data.theme = 'blue')

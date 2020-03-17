@@ -3,7 +3,7 @@ include ../progress/progress
 mixin software(data = {})
   .software
     .software__header
-      +block-header({ src: 'software-icon.jpg', title: 'Software', modif: 'right_side' })
+      +block-header({ src: 'software-icon.jpg', title: 'Software', theme: 'right-side' })
     .software__main
       each item in data
         +progress({ name: item.name, percent: item.percent })

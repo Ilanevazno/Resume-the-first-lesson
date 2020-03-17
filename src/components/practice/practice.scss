@@ -46,20 +46,17 @@
 
   &__text {
     margin: 0.6rem 0 0 0.9rem;
-    font-family: "PT Sans", Arial, sans-serif;
-    font-size: 0.9rem;
-    line-height: 1.2rem;
+    font: 0.9rem/1.2rem "PT Sans", Arial, sans-serif;
   }
 
   &__subtitle {
     color: black;
-    font-size: 1.65rem;
     position: relative;
-    font-weight: bold;
     margin: 0;
     padding-left: 2%;
     text-transform: uppercase;
     white-space: nowrap;
+    font: bold 1.65rem "Myriad pro", Arial, sans-serif;
 
     &-wrap {
       display: flex;
@@ -71,8 +68,7 @@
   }
 
   &__date {
-    font-family: "PT Sans", Arial, sans-serif;
-    font-size: 1.52rem;
+    font: 1.52rem "PT Sans", Arial, sans-serif;
     margin: 0;
     display: flex;
     padding-left: 3%;
@@ -81,9 +77,8 @@
   }
 
   &__job {
-    font-size: 1.4rem;
+    font: 1.4rem "PT Sans", Arial, sans-serif;
     text-transform: uppercase;
     margin: 0.4rem 0 0 0.7rem;
-    font-family: "PT Sans", Arial, sans-serif;
   }
 }

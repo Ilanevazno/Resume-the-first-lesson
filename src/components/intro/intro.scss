@@ -38,16 +38,14 @@
   }
 
   &__name {
-    font-weight: lighter;
-    font-size: 3.5rem;
+    font: lighter 3.5rem "Myriad pro", Arial, sans-serif;
     transition: 0.2s ease-in-out all;
     word-break: break-word;
     text-transform: uppercase;
   }
 
   &__header {
-    font-weight: bold;
-    font-size: 4rem;
+    font: bold 4rem "Myriad pro", Arial, sans-serif;
     line-height: 2.4rem;
     transition: 0.2s ease-in-out all;
     word-break: break-word;

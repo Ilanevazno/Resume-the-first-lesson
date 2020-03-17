@@ -1,15 +1,13 @@
 .contacts {
   &__caption {
     color: $blue;
-    font-size: 1.3rem;
-    font-weight: bold;
+    font: bold 1.3rem "Myriad pro", Arial, sans-serif;
     text-transform: uppercase;
     width: 8.2rem;
   }
 
   &__data {
-    font-family: "PT Sans", Arial, sans-serif;
-    font-size: 1.28rem;
+    font: 1.28rem "PT Sans", Arial, sans-serif;
   }
 
   &__row {
