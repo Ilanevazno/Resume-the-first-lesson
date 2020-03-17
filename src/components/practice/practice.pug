@@ -1,8 +1,5 @@
-mixin practice(data = {})
+mixin practice(data = {}, theme)
   -
-    const {
-      theme = 'black',
-    } = data;
     let blockClassName = 'practice';
     if (theme) {
       blockClassName += ` ${blockClassName}_theme_${theme}`
