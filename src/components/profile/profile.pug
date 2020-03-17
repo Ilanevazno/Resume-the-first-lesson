@@ -7,5 +7,5 @@ mixin profile(data = {})
     } = data;
   .profile
     +block-header({ src: 'profile-icon.jpg', title: 'Profile' })
-    p.profile__text= text + ' '
+    p.profile__text= `${text} `
       b= boldText

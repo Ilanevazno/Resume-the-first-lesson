@@ -1,10 +1,10 @@
 mixin circles-progress(data = {})
   -
-    let {
-      count = 0,
+    const {
       filled = 0,
     } = data;
-  ul(class=`circles`)
+    let count = 0;
+  ul(class="circles")
     - for (let x = 0; x < filled; x += 1)
       li.circles__item_filled
     - while (count - filled > 0)
