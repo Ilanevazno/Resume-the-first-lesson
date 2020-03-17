@@ -8,9 +8,9 @@ mixin practice(data = {})
       blockClassName += ` ${blockClassName}_theme_${theme}`
     }
   div(class= blockClassName)
-    ul
+    ul.practice__list
       for item in data
-        li
+        li.practice__list-item
           .practice__subtitle-wrap
             p.practice__subtitle= item.title
             p.practice__date= item.date

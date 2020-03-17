@@ -16,10 +16,10 @@ mixin contacts(data = {})
           .contacts__caption= item.title
           case item.type
             when 'text'
-              p.contacts__data= item.text
+              p.contacts__data.contacts__text-label= item.text
             when 'email'
-              a(href=`mailto: ${item.text}`).contacts__data= item.text
+              a(href=`mailto: ${item.text}`).contacts__data.contacts__link-label= item.text
             when 'tel'
-              a(href=`tel: ${item.text}`).contacts__data= item.text
+              a(href=`tel: ${item.text}`).contacts__data.contacts__link-label= item.text
             when 'link'
-              a(href= item.text target="_blank" rel="noopener noreferrer").contacts__data= item.text
+              a(href= item.text target="_blank" rel="noopener noreferrer").contacts__data.contacts__link-label= item.text

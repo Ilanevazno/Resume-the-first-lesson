@@ -5,15 +5,7 @@
     justify-content: center;
     text-transform: uppercase;
 
-    ul {
-      display: flex;
-      list-style: none;
-      justify-content: space-between;
-      margin: 0.65rem 0 0 0;
-      padding: 0 12% 0 11%;
-    }
-
-    p {
+    &-title {
       font: 1.4rem "PT Sans", Arial, sans-serif;
       margin: 1.7rem auto 0 auto;
     }

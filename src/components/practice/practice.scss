@@ -6,13 +6,13 @@
     margin-top: 3.5rem;
   }
 
-  ul {
+  &__list {
     list-style: none;
     margin: 0;
     padding: 0;
     margin-left: 2.75rem;
 
-    li {
+    &-item {
       position: relative;
       margin-top: 0.65rem;
 
