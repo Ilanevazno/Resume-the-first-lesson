@@ -4,9 +4,9 @@ mixin circles-progress(data = {})
       filled = 0,
       count = 0
     } = data;
-  ul(class="circles")
+  ul.circles-progress
     - for (let x = 0; x < filled; x += 1)
-      li.circles__item_filled
+      li.circles-progress__item_filled
     - while (count - filled > 0)
-      li.circles__item
+      li.circles-progress__item
       - count -= 1;
