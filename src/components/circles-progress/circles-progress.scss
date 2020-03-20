@@ -1,4 +1,4 @@
-@mixin skills__circle($color: $bar) {
+@mixin circles-progress($color: $bar) {
   width: 1.1rem;
   height: 1.1rem;
   border-radius: 50%;
@@ -14,10 +14,10 @@
   padding: 0 12% 0 11%;
 
   &__item {
-    @include skills__circle;
+    @include circles-progress;
 
     &_filled {
-      @include skills__circle($blue);
+      @include circles-progress($blue);
     }
   }
 }
