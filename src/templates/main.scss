@@ -16,6 +16,10 @@ html {
   @include media-breakpoint($desktop-small) {
     font-size: 16px;
   }
+
+  @include media-breakpoint($mobile) {
+    font-size: 11px;
+  }
 }
 
 h1,
