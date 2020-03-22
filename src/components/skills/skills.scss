@@ -6,7 +6,9 @@
     text-transform: uppercase;
 
     &-progress {
-      margin: 0.65rem 0 0 0;
+      margin: 0.5rem auto 0 auto;
+      max-width: 26rem;
+      width: 100%;
     }
 
     &-title {
