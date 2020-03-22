@@ -9,7 +9,7 @@ mixin intro(data = {})
   section.intro
     .intro__avatar
       - if (avatar)
-          img(src= require(`../../assets/images/${avatar}`), alt="user-avatar").intro__avatar-picture
+          img(src= require(`../../components/intro/img/${avatar}`), alt="user-avatar").intro__avatar-picture
     .intro__title
       h1.intro__name= name
       h2.intro__header= surname
