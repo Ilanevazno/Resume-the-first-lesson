@@ -6,7 +6,7 @@ mixin intro(data = {})
       surname = '',
       job = '',
     } = data;
-  .intro
+  section.intro
     .intro__avatar
       - if (avatar)
           img(src= require(`../../assets/images/${avatar}`), alt="user-avatar").intro__avatar-picture
