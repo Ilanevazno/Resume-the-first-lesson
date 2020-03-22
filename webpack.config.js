@@ -1,6 +1,8 @@
 const path = require('path');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const autoprefixer = require('autoprefixer');
+
 module.exports = {
   output: {
     path: path.join(__dirname, 'build'),
@@ -42,15 +44,15 @@ module.exports = {
       },
       {
         test: /\.pug$/,
-         use: {
+        use: {
           loader: 'pug-loader',
-           options: {
+          options: {
             self: true,
             pretty: true,
             root: path.resolve(__dirname, 'src')
-           },
-         },
-       },
+          },
+        },
+      },
       {
         test: /\.(s(a|c)|c)ss$/,
         use: [
@@ -60,6 +62,15 @@ module.exports = {
             options: {
               importLoaders: 3,
               sourceMap: true
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true,
+              config: {
+                path: 'postcss.config.js'
+              }
             }
           },
           {
