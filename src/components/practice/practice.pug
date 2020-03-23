@@ -1,10 +1,10 @@
 mixin practice(data = {}, theme)
   -
-    let blockClassName = 'practice';
+    let blockClassName = 'practice-list';
     if (theme) {
       blockClassName += ` ${blockClassName}_theme_${theme}`
     }
-  ul(class=`practice__list ${blockClassName}`)
+  ul(class=`${blockClassName}`)
     for item in data
       -
         const {
@@ -13,9 +13,9 @@ mixin practice(data = {}, theme)
           subtitle,
           description,
         } = item;
-      li.practice__list-item
-        .practice__subtitle-wrap
-          p.practice__subtitle= title
-          p.practice__date= date
-        p.practice__job= subtitle
-        p.practice__text= description
+      li.practice-list__item
+        .practice-list__subtitle-wrap
+          p.practice-list__subtitle= title
+          p.practice-list__date= date
+        p.practice-list__job= subtitle
+        p.practice-list__text= description
