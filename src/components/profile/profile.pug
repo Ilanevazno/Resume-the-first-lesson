@@ -1,10 +1,5 @@
 include ../block-header/block-header
-mixin profile(data = {})
-  -
-    const {
-      text = '',
-      boldText = '',
-    } = data;
+mixin profile({ text = '', boldText = '' })
   section.profile
     +block-header({ src: 'profile-icon.jpg', title: 'Profile' })
     p.profile__text= `${text} `

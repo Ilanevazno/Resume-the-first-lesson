@@ -1,9 +1,4 @@
-mixin progress(data = {})
-  -
-    const {
-      name = '',
-      percent = 0,
-    } = data;
+mixin progress({ name = '', percent = 0 })
   .progress
     p(class=`progress__title-${name}`)= name
     .progress__block

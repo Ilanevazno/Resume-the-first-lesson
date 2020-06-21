@@ -1,9 +1,4 @@
-mixin circles-progress(data = {})
-  -
-    let {
-      filled = 0,
-      count = 0
-    } = data;
+mixin circles-progress({ filled = 0, count = 0 })
   ul.circles-progress
     - for (let x = 0; x < filled; x += 1)
       li.circles-progress__item.circles-progress__item_filled

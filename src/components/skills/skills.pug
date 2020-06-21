@@ -1,9 +1,9 @@
 include ../block-header/block-header
 include ../circles-progress/circles-progress.pug
 
-mixin skills(data = {})
+mixin skills(data)
   -
-    const { maxCount = 12 } = data;
+    const maxCount = 12;
   section.skills
     .skills__header
       +block-header({ src: 'skills-icon.jpg', title: 'Skills' })

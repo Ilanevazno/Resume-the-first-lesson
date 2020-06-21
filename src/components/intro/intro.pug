@@ -1,11 +1,4 @@
-mixin intro(data = {})
-  -
-    const {
-      avatar = '',
-      name = '',
-      surname = '',
-      job = '',
-    } = data;
+mixin intro({ avatar = '', name = '', surname = '', job = '' })
   section.intro
     .intro__avatar
       - if (avatar)
